@@ -81,7 +81,6 @@
           let list
           if(type===1&&this.json1){
             list=  JSON.parse(this.json1).data.game_arena_player
-            console.log(111111,list);
           }else{
             list = JSON.parse(this.json2)
           }
@@ -89,7 +88,6 @@
           
           let countList = []
           list.forEach((e, i) => {
-            console.log('e----',e);
             let conut = 0
             e?.game_award.forEach((e2, i2) => {
               conut += Number(e2.award_bean)
@@ -97,7 +95,7 @@
                 countList.push(conut);
               }
               info.roomInfo.push(`<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${ i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) +'总价值'+ '<span style="color:red">'+conut+'</span>' +'\n<br/>=========================' : ''} </p>` )
-              // console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
+              console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
           const totalPrice = countList.reduce((total, num) => total + num, 0)
@@ -105,12 +103,13 @@
           
           if(type===1){
             info.ticket = JSON.parse(this.json1).data.total_bean
+            console.log(`房间门票${info.ticket}币`);
           }
           info.totalPrice = totalPrice
           info.avg = avg
           // console.log(`房间总席位`);
-          // console.log(`房间门票${list.data.total_bean}币`);
-          // console.log('平均值', avg);
+          console.log('当前人数的总价值', totalPrice);
+          console.log('平均值', avg);
         }
       }
     })
