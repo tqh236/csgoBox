@@ -26,9 +26,9 @@
         <div v-for="item in info1.roomInfo" v-html="item">
           {{item}}
         </div>
-        <p v-if="info1.ticket">门票：{{info1.ticket}}</p>
-        <p v-if="info1.avg">平均值：{{info1.avg}}</p>
-        <p v-if="info1.totalPrice">当前人数的总价值：{{info1.totalPrice}}</p>
+        <p v-if="info1.ticket">门票：<span class="keyNumber">{{info1.ticket}}</span> </p>
+        <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
+        <p v-if="info1.totalPrice">当前人数的总价值：<span class="keyNumber">{{info1.totalPrice}}</span></p>
       </div>
 
 
@@ -42,8 +42,8 @@
         <div v-for="item in info2.roomInfo" v-html="item">
           {{item}}
         </div>
-        <p v-if="info2.avg">平均值：{{info2.avg}}</p>
-        <p v-if="info2.totalPrice">当前人数的总价值：{{info2.totalPrice}}</p>
+        <p v-if="info2.avg">平均值：<span class="keyNumber">{{info2.avg}}</span></p>
+        <p v-if="info2.totalPrice">当前人数的总价值：<span class="keyNumber">{{info2.totalPrice}}</span></p>
       </div>
 
     </div>
@@ -97,7 +97,10 @@
               if (e2.award_bean, i2 + 1 == e.game_award.length) {
                 countList.push(conut);
               }
-              info.roomInfo[i]=(`<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${ i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) +'总价值'+ '<span style="color:red">'+conut+'</span>' +'\n<br/>=========================' : ''} </p>` )
+
+              let infoItem= `<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值' + '<span style="color:red">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
+              // if(info.roomInfo.length) return
+              info.roomInfo.push(infoItem)
               console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
@@ -128,6 +131,9 @@
   }
   .left,.right{
     width: 50%;
+  }
+  .keyNumber{
+    color: red;
   }
 
 </style>
