@@ -110,7 +110,7 @@
           
           if(type===1){
             info.ticket = JSON.parse(this.json1).data.total_bean
-            console.log(`房间门票${info.ticket}币`);
+            console.log('\x1b[31m%s\x1b[0m', `房间门票${info.ticket}币`);
           }
           info.totalPrice = totalPrice
           info.avg = avg
