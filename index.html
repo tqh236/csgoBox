@@ -28,6 +28,7 @@
         </div>
         <p v-if="info1.ticket">门票：{{info1.ticket}}</p>
         <p v-if="info1.avg">平均值：{{info1.avg}}</p>
+        <p v-if="info1.totalPrice">当前人数的总价值：{{info1.avg}}</p>
       </div>
 
 
@@ -42,6 +43,7 @@
           {{item}}
         </div>
         <p v-if="info2.avg">平均值：{{info2.avg}}</p>
+        <p v-if="info2.totalPrice">当前人数的总价值：{{info1.avg}}</p>
       </div>
 
     </div>
@@ -55,14 +57,16 @@
           info1:{
             roomInfo:[],
             ticket:null,//门票
-            avg:null 
+            avg:null,
+            totalPrice:null //房间目前人资产总价值
           },
           // -------
           json2: null,
           info2: {
             roomInfo: [],
             // ticket: null,//门票
-            avg: null
+            avg: null,
+            totalPrice: null //房间目前人资产总价值
           },
         }
 
@@ -96,11 +100,13 @@
               // console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
-          const avg = countList.reduce((total, num) => total + num, 0) / countList.length;
+          const totalPrice = countList.reduce((total, num) => total + num, 0)
+          const avg = totalPrice / countList.length;
           
           if(type===1){
             info.ticket = JSON.parse(this.json1).data.total_bean
           }
+          info.totalPrice = totalPrice
           info.avg = avg
           // console.log(`房间总席位`);
           // console.log(`房间门票${list.data.total_bean}币`);
