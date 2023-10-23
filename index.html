@@ -75,7 +75,10 @@
       },
       methods: {
         oneClear (type) {
+          console.log('type',type);
           this[`json${type}`] = null
+          // Object.assign(this.$data, this.$options.data())
+          this[`info${type}`] = this.$options.data()[`info${type}`];
         },
         oneClick (type,info) {
           let list
