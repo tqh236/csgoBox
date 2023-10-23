@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- 要先引入vue.js 否则报错 -->
+  <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+  <div id='app'>
+    <div class="box">
+
+      <div class="left">
+        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json1" :autosize="{ minRows: 5,maxRows: 5}">
+        </el-input>
+
+        <el-button @click="oneClear(1)">清空1</el-button>
+        <el-button @click="oneClick(1,info1)">确定1</el-button>
+
+        <div v-for="item in info1.roomInfo" v-html="item">
+          {{item}}
+        </div>
+        <p v-if="info1.ticket">门票：{{info1.ticket}}</p>
+        <p v-if="info1.avg">平均值：{{info1.avg}}</p>
+      </div>
+
+
+      <div class="right">
+        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json2" :autosize="{ minRows: 5,maxRows: 5}">
+        </el-input>
+
+        <el-button @click="oneClear(2)">清空2</el-button>
+        <el-button @click="oneClick(2,info2)">确定2</el-button>
+
+        <div v-for="item in info2.roomInfo" v-html="item">
+          {{item}}
+        </div>
+        <p v-if="info2.avg">平均值：{{info2.avg}}</p>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data () {
+        return {
+          json1: null,
+          info1:{
+            roomInfo:[],
+            ticket:null,//门票
+            avg:null 
+          },
+          // -------
+          json2: null,
+          info2: {
+            roomInfo: [],
+            // ticket: null,//门票
+            avg: null
+          },
+        }
+
+      },
+      watch: {
+      },
+      methods: {
+        oneClear (type) {
+          this[`json${type}`] = null
+        },
+        oneClick (type,info) {
+          let list
+          if(type===1&&this.json1){
+            list=  JSON.parse(this.json1).data.game_arena_player
+            console.log(111111,list);
+          }else{
+            list = JSON.parse(this.json2)
+          }
+          if (!list) return
+          
+          let countList = []
+          list.forEach((e, i) => {
+            console.log('e----',e);
+            let conut = 0
+            e?.game_award.forEach((e2, i2) => {
+              conut += Number(e2.award_bean)
+              if (e2.award_bean, i2 + 1 == e.game_award.length) {
+                countList.push(conut);
+              }
+              info.roomInfo.push(`<p>房间原始${e.seat + 1}回合${i2 + 1} ${e2.award_bean} ,${ i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) +'总价值'+ '<span style="color:red">'+conut+'</span>' +'\n<br/>=========================' : ''} </p>` )
+              // console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
+            })
+          })
+          const avg = countList.reduce((total, num) => total + num, 0) / countList.length;
+          
+          if(type===1){
+            info.ticket = JSON.parse(this.json1).data.total_bean
+          }
+          info.avg = avg
+          // console.log(`房间总席位`);
+          // console.log(`房间门票${list.data.total_bean}币`);
+          // console.log('平均值', avg);
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>
+<style>
+  .box{
+    width: 100%;
+    display: flex;
+  }
+  .left,.right{
+    width: 50%;
+  }
+
+</style>
