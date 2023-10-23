@@ -23,12 +23,12 @@
         <el-button @click="oneClear(1)">清空1</el-button>
         <el-button @click="oneClick(1,info1)">确定1</el-button>
 
-        <div v-for="item in info1.roomInfo" v-html="item">
+        <template v-for="item in info1.roomInfo" v-html="item">
           {{item}}
-        </div>
+        </template>
         <p v-if="info1.ticket">门票：{{info1.ticket}}</p>
         <p v-if="info1.avg">平均值：{{info1.avg}}</p>
-        <p v-if="info1.totalPrice">当前人数的总价值：{{info1.avg}}</p>
+        <p v-if="info1.totalPrice">当前人数的总价值：{{info1.totalPrice}}</p>
       </div>
 
 
@@ -43,7 +43,7 @@
           {{item}}
         </div>
         <p v-if="info2.avg">平均值：{{info2.avg}}</p>
-        <p v-if="info2.totalPrice">当前人数的总价值：{{info1.avg}}</p>
+        <p v-if="info2.totalPrice">当前人数的总价值：{{info1.totalPrice}}</p>
       </div>
 
     </div>
