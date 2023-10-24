@@ -60,6 +60,7 @@
           json1: null,
           info1:{
             roomInfo:[],
+            roomInfo2:[],
             ticket:null,//门票
             avg:null,
             totalPrice:null //房间目前人资产总价值
@@ -68,6 +69,7 @@
           json2: null,
           info2: {
             roomInfo: [],
+            roomInfo2: [],
             // ticket: null,//门票
             avg: null,
             totalPrice: null //房间目前人资产总价值
@@ -104,11 +106,17 @@
 
               // let infoItem= `<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '<br/><br/>席位' + (e.seat + 1) + '总价值' + '<span style="color:red">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
               let infoItem= `<p> ${type==1?'房间原始席位':'席位'}${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值' + '<span style="color:blue">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
-              // if(info.roomInfo.length) return
+              // if (info.roomInfo2.find(i => i.id == e2.award_id)) return setTimeout(() => {
+              //   this.$message.error('请勿重复添加')
+              // }, 0);//如果找到 就是重复了
+              if (info.roomInfo2.find(i => i.id == e2.award_id)) return ;//如果找到 就是重复了
               info.roomInfo.push(infoItem)
+              info.roomInfo2.push({label: infoItem ,id: e2.award_id })
               console.log(`${e.type == 1 ? '房间原始席位' : '席位'}${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
+          // console.log(555555555555555555555555,info.roomInfo);
+          console.log(555555555555555555555555,info.roomInfo2);
           const totalPrice = countList.reduce((total, num) => total + num, 0)
           const avg = totalPrice / countList.length;
           
