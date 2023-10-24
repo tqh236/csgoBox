@@ -99,10 +99,10 @@
               }
 
               // let infoItem= `<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '<br/><br/>席位' + (e.seat + 1) + '总价值' + '<span style="color:red">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
-              let infoItem= `<p>房间原始${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值' + '<span style="color:blue">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
+              let infoItem= `<p> ${e.seat==1?'房间原始席位':'席位'}${e.seat + 1}\xa0回合${i2 + 1}:\xa0 <span style="color:red">${e2.award_bean}</span> \xa0${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值' + '<span style="color:blue">' + conut + '</span>' + '\n<br/>=========================' : ''} </p>`
               // if(info.roomInfo.length) return
               info.roomInfo.push(infoItem)
-              console.log(`房间原始${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
+              console.log(`${e.seat == 1 ? '房间原始席位' : '席位'}${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
           const totalPrice = countList.reduce((total, num) => total + num, 0)
