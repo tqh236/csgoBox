@@ -115,8 +115,6 @@
               console.log(`${e.type == 1 ? '房间原始席位' : '席位'}${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
-          // console.log(555555555555555555555555,info.roomInfo);
-          console.log(555555555555555555555555,info.roomInfo2);
           const totalPrice = countList.reduce((total, num) => total + num, 0)
           const avg = totalPrice / countList.length;
           
