@@ -23,7 +23,7 @@
         <el-button @click="oneClear(1)">清空1</el-button>
         <el-button @click="oneClick(1,info1)">确定1</el-button>
 
-        <div class="infoBox">
+        <div class="infoBox" v-if="info1.roomInfo.length">
           <div v-for="item in info1.roomInfo" v-html="item">
             {{item}}
           </div>
@@ -41,11 +41,13 @@
         <el-button @click="oneClear(2)">清空2</el-button>
         <el-button @click="oneClick(2,info2)">确定2</el-button>
 
-        <div v-for="item in info2.roomInfo" v-html="item">
-          {{item}}
+        <div class="infoBox" v-if="info2.roomInfo.length">
+          <div v-for="item in info2.roomInfo" v-html="item">
+            {{item}}
+          </div>
+          <!-- <p v-if="info2.avg">平均值：<span class="keyNumber">{{info2.avg}}</span></p>
+                <p v-if="info2.totalPrice">当前人数的总价值：<span class="keyNumber">{{info2.totalPrice}}</span></p> -->
         </div>
-        <!-- <p v-if="info2.avg">平均值：<span class="keyNumber">{{info2.avg}}</span></p>
-        <p v-if="info2.totalPrice">当前人数的总价值：<span class="keyNumber">{{info2.totalPrice}}</span></p> -->
       </div>
 
     </div>
@@ -139,10 +141,10 @@
   .keyNumber{
     color: red;
   }
-  /* .infoBox{
-    height: 600px;
-    overflow-y: auto;
+  .infoBox{
+    /* height: 600px;
+    overflow-y: auto; */
     border: 1px solid red;
-  } */
+  }
 
 </style>
