@@ -17,23 +17,25 @@
     <div class="box">
 
       <div class="left">
-        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json1" :autosize="{ minRows: 5,maxRows: 5}">
+        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json1" :autosize="{ minRows: 7,maxRows: 7}">
         </el-input>
 
         <el-button @click="oneClear(1)">清空1</el-button>
         <el-button @click="oneClick(1,info1)">确定1</el-button>
 
-        <div v-for="item in info1.roomInfo" v-html="item">
-          {{item}}
+        <div class="infoBox">
+          <div v-for="item in info1.roomInfo" v-html="item">
+            {{item}}
+          </div>
+          <!-- <p v-if="info1.ticket">门票：<span class="keyNumber">{{info1.ticket}}</span> </p>
+                <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
+                <p v-if="info1.totalPrice">当前人数的总价值：<span class="keyNumber">{{info1.totalPrice}}</span></p> -->
         </div>
-        <!-- <p v-if="info1.ticket">门票：<span class="keyNumber">{{info1.ticket}}</span> </p>
-        <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
-        <p v-if="info1.totalPrice">当前人数的总价值：<span class="keyNumber">{{info1.totalPrice}}</span></p> -->
       </div>
 
 
       <div class="right">
-        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json2" :autosize="{ minRows: 5,maxRows: 5}">
+        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json2" :autosize="{ minRows: 7,maxRows: 7}">
         </el-input>
 
         <el-button @click="oneClear(2)">清空2</el-button>
@@ -75,7 +77,6 @@
       },
       methods: {
         oneClear (type) {
-          console.log('type',type);
           this[`json${type}`] = null
           // Object.assign(this.$data, this.$options.data())
           this[`info${type}`] = this.$options.data()[`info${type}`];
@@ -84,6 +85,7 @@
           let list
           if(type===1&&this.json1){
             list=  JSON.parse(this.json1).data.game_arena_player
+            list.sort((a, b) => a.seat - b.seat);
           }else{
             list = JSON.parse(this.json2)
           }
@@ -132,9 +134,15 @@
   }
   .left,.right{
     width: 50%;
+    padding: 10px;
   }
   .keyNumber{
     color: red;
   }
+  /* .infoBox{
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid red;
+  } */
 
 </style>
