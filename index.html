@@ -96,6 +96,7 @@
           if (!list) return
           
           let countList = []
+          console.log(111111111, info.roomInfo2);
           list.forEach((e, i) => {
             let conut = 0
             e?.game_award.forEach((e2, i2) => {
@@ -113,10 +114,9 @@
               //   this.$message.error('请勿重复添加')
               // }, 0);//如果找到 就是重复了
 
-              // award_id可能重复(可能只有一回合 并且有两方开出一样的 这样就会少打印一个席位) +下标i的话判重实效 改成user_id又只会打印一个回合 所有用两者相加判断
-              if (info.roomInfo2.find(i => i.id == e2.award_id + e2.user_id  )) return ;//如果找到 就是重复了
+              if (info.roomInfo2.find(i => i.id == String(e2.id) )) return ;//如果找到 就是重复了
               info.roomInfo.push(infoItem)
-              info.roomInfo2.push({label: infoItem ,id: e2.award_id + e2.user_id  })
+              info.roomInfo2.push({label: infoItem ,id: String(e2.id) })
               console.log(`${e.type == 1 ? '房间原始席位' : '席位'}${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
