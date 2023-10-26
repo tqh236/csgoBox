@@ -25,12 +25,12 @@
         <el-button type="info" plain @click="paste(1,info1)">粘贴</el-button>
 
 
+        <p v-if="info1.ticket">门票：<span class="keyNumber">{{info1.ticket}}</span> </p>
         <div class="infoBox" v-if="info1.roomInfo.length">
           <div v-for="item in info1.roomInfo" v-html="item">
             {{item}}
           </div>
-          <!-- <p v-if="info1.ticket">门票：<span class="keyNumber">{{info1.ticket}}</span> </p>
-                <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
+                <!-- <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
                 <p v-if="info1.totalPrice">当前人数的总价值：<span class="keyNumber">{{info1.totalPrice}}</span></p> -->
         </div>
       </div>
@@ -77,6 +77,8 @@
             avg: null,
             totalPrice: null //房间目前人资产总价值
           },
+          historyInfo1:[],
+          historyInfo2:[],
         }
 
       },
@@ -84,7 +86,23 @@
 
       },
       methods: {
+
       paste (type,info) {
+        info.roomInfo = []
+        info.roomInfo2 = []
+
+          // var count = 0;   //多次一举的脑瘫判断
+          // for (var i = 0; i < info.roomInfo.length; i++) {
+          //   if (info.roomInfo[i].includes("席位1总价值")) {
+          //     count++;
+          //   }
+          //   console.log('count>>>>', count);
+          // }
+          // var appearsMoreThanOnce = count > 1;
+          // if(appearsMoreThanOnce){
+          //   info.roomInfo = []
+          // }
+
           // 执行粘贴操作
           navigator.clipboard.readText()
             .then(pastedText => {
@@ -114,7 +132,6 @@
           if (!list) return
 
           let countList = []
-          console.log(111111111, info.roomInfo2);
           list.forEach((e, i) => {
             let conut = 0
             e?.game_award.forEach((e2, i2) => {
@@ -176,7 +193,7 @@
   }
 
   .keyNumber {
-    color: red;
+    color: #a61818;
   }
 
   .infoBox {
