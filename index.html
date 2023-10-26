@@ -20,8 +20,10 @@
         <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json1" :autosize="{ minRows: 7,maxRows: 7}">
         </el-input>
 
-        <el-button @click="oneClear(1)">清空1</el-button>
-        <el-button @click="oneClick(1,info1)">确定1</el-button>
+        <el-button type="danger"plain  @click="oneClear(1)">清空1</el-button>
+        <el-button type="primary" plain @click="oneClick(1,info1)">确定1</el-button>
+        <el-button type="info" plain @click="paste(1)">粘贴</el-button>
+
 
         <div class="infoBox" v-if="info1.roomInfo.length">
           <div v-for="item in info1.roomInfo" v-html="item">
@@ -38,8 +40,9 @@
         <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json2" :autosize="{ minRows: 7,maxRows: 7}">
         </el-input>
 
-        <el-button @click="oneClear(2)">清空2</el-button>
-        <el-button @click="oneClick(2,info2)">确定2</el-button>
+        <el-button type="danger" plain  @click="oneClear(2)">清空2</el-button>
+        <el-button type="primary" plain @click="oneClick(2,info2)" >确定2</el-button>
+        <el-button type="info" plain @click="paste(2)">粘贴</el-button>
 
         <div class="infoBox" v-if="info2.roomInfo.length">
           <div v-for="item in info2.roomInfo" v-html="item">
@@ -80,10 +83,22 @@
       watch: {
       },
       methods: {
+      paste (type) {
+          // 执行粘贴操作
+          navigator.clipboard.readText()
+            .then(pastedText => {
+              // this.text = pastedText; // 将粘贴的内容赋值给文本框
+              this[`json${type}`] = pastedText; // 将粘贴的内容赋值给文本框
+            })
+            .catch(error => {
+              console.error('粘贴操作失败:', error);
+            });
+        },
         oneClear (type) {
           this[`json${type}`] = null
           // Object.assign(this.$data, this.$options.data())
           this[`info${type}`] = this.$options.data()[`info${type}`];
+          console.clear()
         },
         oneClick (type,info) {
           let list
