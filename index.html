@@ -22,7 +22,7 @@
 
         <el-button type="danger"plain  @click="oneClear(1)">清空1</el-button>
         <el-button type="primary" plain @click="oneClick(1,info1)">确定1</el-button>
-        <el-button type="info" plain @click="paste(1),info1">粘贴</el-button>
+        <el-button type="info" plain @click="paste(1,info1)">粘贴</el-button>
 
 
         <div class="infoBox" v-if="info1.roomInfo.length">
@@ -42,7 +42,7 @@
 
         <el-button type="danger" plain  @click="oneClear(2)">清空2</el-button>
         <el-button type="primary" plain @click="oneClick(2,info2)" >确定2</el-button>
-        <el-button type="info" plain @click="paste(2),info2">粘贴</el-button>
+        <el-button type="info" plain @click="paste(2,info2)">粘贴</el-button>
 
         <div class="infoBox" v-if="info2.roomInfo.length">
           <div v-for="item in info2.roomInfo" v-html="item">
@@ -81,6 +81,7 @@
 
       },
       watch: {
+
       },
       methods: {
       paste (type,info) {
@@ -89,7 +90,7 @@
             .then(pastedText => {
               // this.text = pastedText; // 将粘贴的内容赋值给文本框
               this[`json${type}`] = pastedText; // 将粘贴的内容赋值给文本框
-              this[`json${type}`] = null; //  
+              // this[`info${type}`] = this.$options.data()[`info${type}`];
               this.oneClick(type, info)
             })
             .catch(error => {
