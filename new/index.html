@@ -22,8 +22,8 @@
       <el-button type="info" plain @click="paste()">粘贴</el-button>
       <p v-if="info.ticket.length">看过的门票：<span class="keyNumber ticketDom" v-for="e in info.ticket">{{e}}</span> </p>
       <div class="infoBox" v-if="info.roomInfo.length">
-        <div v-for="item in info.roomInfo" v-html="item">
-          {{item}}
+        <div v-for="item in info.roomInfo" v-html="item.label">
+          {{item.label}}
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
           json: null,
           info: {
             roomInfo: [],
-            roomInfo2: [],
+            // roomInfo2: [],
             ticket: [],//门票
             avg: null,
             totalPrice: null //房间目前人资产总价值
@@ -54,6 +54,7 @@
           console.clear()
         },
         paste(){
+          this.info.roomInfo = []
           // 执行粘贴操作
           navigator.clipboard.readText()
             .then(pastedText => {
@@ -79,8 +80,12 @@
               if (findPrice) {
                 count += Number(findPrice.skins.bean)
                 // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
-                const info = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}</p>`
-                this.info.roomInfo.push(info)
+                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}</p>`
+           
+                // this.info.roomInfo.push(infoItem)
+                if (this.info.roomInfo.find(i => i.id == String(e2.id))) return;//如果找到 就是重复了
+                this.info.roomInfo.push({ label: infoItem, id: String(e2.id) })
+                
               }
             })
           })
