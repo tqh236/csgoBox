@@ -80,7 +80,7 @@
               if (findPrice) {
                 count += Number(findPrice.skins.bean)
                 // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
-                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}</p>`
+                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPrice>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
            
                 // this.info.roomInfo.push(infoItem)
                 if (this.info.roomInfo.find(i => i.id == String(e2.id))) return;//如果找到 就是重复了
@@ -100,4 +100,13 @@
 
 </html>
 <style>
+  html {
+    background: #8a8a7c;
+  }
+  .keyNumber {
+    color: #a61818;
+  }
+  .totalPrice{
+    color: blue;
+  }
 </style>
