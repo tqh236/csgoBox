@@ -14,13 +14,33 @@
 
 <body>
   <div id='app'>
-    hello word
+    <div class="box">
+      <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json" :autosize="{ minRows: 7,maxRows: 7}">
+      </el-input>
+      <el-button type="danger" plain @click="clearAll()">清空</el-button>
+      <el-button type="primary" plain @click="confirm()">确定</el-button>
+      <el-button type="info" plain @click="paste()">粘贴</el-button>
+      <p v-if="info.ticket.length">看过的门票：<span class="keyNumber ticketDom" v-for="e in info.ticket">{{e}}</span> </p>
+      <div class="infoBox" v-if="info.roomInfo.length">
+        <div v-for="item in info.roomInfo" v-html="item">
+          {{item}}
+        </div>
+      </div>
+    </div>
   </div>
   <script>
     var app = new Vue({
       el: '#app',
       data () {
         return {
+          json: null,
+          info: {
+            roomInfo: [],
+            roomInfo2: [],
+            ticket: [],//门票
+            avg: null,
+            totalPrice: null //房间目前人资产总价值
+          },
         }
 
       },
@@ -28,6 +48,45 @@
 
       },
       methods: {
+        clearAll(){
+          this[`json`] = null
+          this[`info`] = this.$options.data()[`info`];
+          console.clear()
+        },
+        paste(){
+          // 执行粘贴操作
+          navigator.clipboard.readText()
+            .then(pastedText => {
+              this[`json`] = pastedText; // 将粘贴的内容赋值给文本框
+              // this[`info${type}`] = this.$options.data()[`info${type}`];
+              this.confirm()
+            })
+            .catch(error => {
+              console.error('粘贴操作失败:', error);
+            });
+        },
+        confirm(){
+          if(!this.json) return
+          let obj = JSON.parse(this.json).data 
+          obj.game_arena_player.sort((a, b) => a.seat - b.seat);
+          obj.game_arena_player.forEach((e, i) => {
+            // 席位(用户)
+            let count = 0
+            e.game_award.forEach((e2, i2) => {
+              // 回合(箱子)
+              let findBoxObj = obj.game_arena_box.find(b => b.box_id == e2.box_id)
+              let findPrice = findBoxObj.box.contains.find(p => p.skin_id == e2.award_id)
+              if (findPrice) {
+                count += Number(findPrice.skins.bean)
+                // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
+                const info = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}</p>`
+                this.info.roomInfo.push(info)
+              }
+            })
+          })
+          //  this.info.ticket.push(obj.total_bean)
+           this.info.ticket.push(this.info.ticket.length === 0 ? '' : ', ', obj.total_bean)
+        },
       }
     })
 
