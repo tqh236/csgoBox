@@ -48,6 +48,18 @@
 
       },
       methods: {
+        // -------------解决js计算精度丢失的问题-----------------
+        add(a, b) {
+          const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
+          const multiplier = Math.pow(10, precision);
+          const result = (a * multiplier + b * multiplier) / multiplier;
+          return result;
+        },
+        getPrecision (num) {
+         const decimalPart = String(num).split('.')[1];
+         return decimalPart ? decimalPart.length : 0;
+        },
+        // ----------------------------------------------------
         clearAll(){
           this[`json`] = null
           this[`info`] = this.$options.data()[`info`];
@@ -78,7 +90,9 @@
               let findBoxObj = obj.game_arena_box.find(b => b.box_id == e2.box_id)
               let findPrice = findBoxObj.box.contains.find(p => p.skin_id == e2.award_id)
               if (findPrice) {
-                count += Number(findPrice.skins.bean)
+                // count += Number(findPrice.skins.bean)
+                count = this.add(count,Number(findPrice.skins.bean))//解决精度丢失
+                
                 // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
                 const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.box.bean) }】>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPrice>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
            
