@@ -107,6 +107,8 @@
         },
         paste(){
           this.info.roomInfo = []
+          this[`totalPrice`] = 0
+          this[`profit`] = null
           // 执行粘贴操作
           navigator.clipboard.readText()
             .then(pastedText => {
