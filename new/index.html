@@ -20,6 +20,7 @@
       <el-button type="danger" plain @click="clearAll()">清空</el-button>
       <el-button type="primary" plain @click="confirm()">确定</el-button>
       <el-button type="info" plain @click="paste()">粘贴</el-button>
+      <div v-if="totalPrice">总价值：<span class="keyNumber">{{totalPrice}}</span> >>> 盈利：<span class="totalPriceColor">{{profit }}</span></div>
       <p v-if="info.ticket.length">看过的门票：<span class="keyNumber ticketDom" v-for="e in info.ticket">{{e}}</span> </p>
       <div class="infoBox" v-if="info.roomInfo.length">
         <div v-for="item in info.roomInfo" v-html="item.label">
@@ -39,8 +40,10 @@
             // roomInfo2: [],
             ticket: [],//门票
             avg: null,
-            totalPrice: null //房间目前人资产总价值
+            // totalPrice: null //房间目前人资产总价值
           },
+          totalPrice:0,
+          profit:null
         }
 
       },
@@ -53,6 +56,12 @@
           const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
           const multiplier = Math.pow(10, precision);
           const result = (a * multiplier + b * multiplier) / multiplier;
+          return result;
+        },
+        sub(a, b) {
+          const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
+          const multiplier = Math.pow(10, precision);
+          const result = (a * multiplier - b * multiplier) / multiplier;
           return result;
         },
         getPrecision (num) {
@@ -81,6 +90,10 @@
         confirm(){
           if(!this.json) return
           let obj = JSON.parse(this.json).data 
+          let total_seat  =obj.user_num //总席位
+          let now_seat = obj.game_arena_player.length
+          let total_price = 0
+
           obj.game_arena_player.sort((a, b) => a.seat - b.seat);
           obj.game_arena_player.forEach((e, i) => {
             // 席位(用户)
@@ -94,12 +107,21 @@
                 count = this.add(count,Number(findPrice.skins.bean))//解决精度丢失
                 
                 // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
-                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.box.bean) }】>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPrice>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
+                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.box.bean) }】>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPriceColor>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
            
                 // this.info.roomInfo.push(infoItem)
                 if (this.info.roomInfo.find(i => i.id == String(e2.id))) return;//如果找到 就是重复了
                 this.info.roomInfo.push({ label: infoItem, id: String(e2.id) })
-                
+
+                if(i2 + 1 == e.game_award.length){ //计算总价值
+                  total_price = this.add(total_price, count)//解决精度丢失
+                  // if(i + 1 == obj.game_arena_player){ //判断席位满了才开始算
+                    if(total_seat== now_seat){
+                    this.totalPrice = total_price
+                    this.profit = this.sub(total_price, obj.total_bean)  //盈利
+                    console.log('552412>', this.totalPrice);
+                  }
+                }
               }
             })
           })
@@ -120,7 +142,7 @@
   .keyNumber {
     color: #a61818;
   }
-  .totalPrice{
+  .totalPriceColor{
     color: blue;
   }
   p .ticketDom:last-child{
