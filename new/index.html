@@ -52,26 +52,73 @@
       },
       methods: {
         // -------------解决js计算精度丢失的问题-----------------
-        add(a, b) {
-          const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
-          const multiplier = Math.pow(10, precision);
-          const result = (a * multiplier + b * multiplier) / multiplier;
-          return result;
+        // add(a, b) {
+        //   const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
+        //   const multiplier = Math.pow(10, precision);
+        //   const result = (a * multiplier + b * multiplier) / multiplier;
+        //   return result;
+        // },
+        // sub(a, b) {
+        //   const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
+        //   const multiplier = Math.pow(10, precision);
+        //   const result = (a * multiplier - b * multiplier) / multiplier;
+        //   return result;
+        // },
+        // getPrecision (num) {
+        //  const decimalPart = String(num).split('.')[1];
+        //  return decimalPart ? decimalPart.length : 0;
+        // },
+        parseNumber (num) {
+          if (typeof num !== 'number') num = parseFloat(num);
+          if (Number.isNaN(num)) throw new Error('Invalid number');
+
+          const numStr = num.toString();
+          const split = numStr.split('.');
+          const integerPart = split[0];
+          const decimalPart = split[1] || '';
+          return {
+            integer: parseInt(integerPart + decimalPart, 10),
+            decimalPlaces: decimalPart.length
+          };
         },
-        sub(a, b) {
-          const precision = Math.max(this.getPrecision(a), this.getPrecision(b));
-          const multiplier = Math.pow(10, precision);
-          const result = (a * multiplier - b * multiplier) / multiplier;
-          return result;
+        adjustNumbers (num1, num2) {
+          const parsed1 = this.parseNumber(num1);
+          const parsed2 = this.parseNumber(num2);
+
+          const maxDecimalPlaces = Math.max(parsed1.decimalPlaces, parsed2.decimalPlaces);
+          const factor = Math.pow(10, maxDecimalPlaces);
+
+          const integer1 = parsed1.integer * Math.pow(10, maxDecimalPlaces - parsed1.decimalPlaces);
+          const integer2 = parsed2.integer * Math.pow(10, maxDecimalPlaces - parsed2.decimalPlaces);
+
+          return { integer1, integer2, factor };
         },
-        getPrecision (num) {
-         const decimalPart = String(num).split('.')[1];
-         return decimalPart ? decimalPart.length : 0;
+        preciseAdd (num1, num2) {
+          const { integer1, integer2, factor } = this.adjustNumbers(num1, num2);
+          return (integer1 + integer2) / factor;
+        },
+        preciseSubtract (num1, num2) {
+          const { integer1, integer2, factor } = this.adjustNumbers(num1, num2);
+          return (integer1 - integer2) / factor;
+        },
+        preciseMultiply (num1, num2) {
+          const parsed1 = this.parseNumber(num1);
+          const parsed2 = this.parseNumber(num2);
+          const integerResult = parsed1.integer * parsed2.integer;
+          const decimalAdjustment = parsed1.decimalPlaces + parsed2.decimalPlaces;
+          return integerResult / Math.pow(10, decimalAdjustment);
+        },
+        preciseDivide (num1, num2) {
+          const { integer1, integer2 } = this.adjustNumbers(num1, num2);
+          if (integer2 === 0) throw new Error('Division by zero');
+          return integer1 / integer2;
         },
         // ----------------------------------------------------
         clearAll(){
           this[`json`] = null
           this[`info`] = this.$options.data()[`info`];
+          this[`totalPrice`] = 0
+          this[`profit`] = null
           console.clear()
         },
         paste(){
@@ -104,8 +151,8 @@
               let findPrice = findBoxObj.box.contains.find(p => p.skin_id == e2.award_id)
               if (findPrice) {
                 // count += Number(findPrice.skins.bean)
-                count = this.add(count,Number(findPrice.skins.bean))//解决精度丢失
-                
+                // count = this.add(count,Number(findPrice.skins.bean))//解决精度丢失
+                count = this.preciseAdd(count, Number(findPrice.skins.bean)).toFixed(2)
                 // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
                 const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.box.bean) }】>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPriceColor>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
            
@@ -114,12 +161,15 @@
                 this.info.roomInfo.push({ label: infoItem, id: String(e2.id) })
 
                 if(i2 + 1 == e.game_award.length){ //计算总价值
-                  total_price = this.add(total_price, count)//解决精度丢失
+                  // total_price = this.add(total_price, count)//解决精度丢失
+                   total_price = this.preciseAdd(total_price, count)
+
                   // if(i + 1 == obj.game_arena_player){ //判断席位满了才开始算
                     if(total_seat== now_seat){
                     this.totalPrice = total_price
-                    this.profit = this.sub(total_price, obj.total_bean)  //盈利
-                    console.log('552412>', this.totalPrice);
+                    // this.profit = this.sub(total_price, obj.total_bean)  //盈利
+                    this.preciseSubtract(total_price, obj.total_bean)
+                    // console.log('552412>', this.totalPrice);
                   }
                 }
               }
