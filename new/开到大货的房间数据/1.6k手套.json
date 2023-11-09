@@ -1,0 +1,2039 @@
+{
+  "code": 200,
+  "message": "ok",
+  "data": {
+      "id": 4958910,
+      "create_user_id": 269389,
+      "user_num": 4,
+      "box_num": 4,
+      "total_bean": "34.16",
+      "game_type": 1,
+      "status": 2,
+      "win_user_id": [
+          267549
+      ],
+      "draw_code": "202311040954532220",
+      "bot_id": 0,
+      "created_at": "2023-11-04 09:53:08",
+      "updated_at": "2023-11-04 09:55:18",
+      "play_type": 1,
+      "designated_bot_id": 0,
+      "is_anchor": 0,
+      "total_award_bean": "1785.09",
+      "current_round": 4,
+      "status_alias": "\u5df2\u7ed3\u675f",
+      "game_arena_player": [
+          {
+              "id": 12077588,
+              "game_arena_id": 4958910,
+              "user_id": 267549,
+              "seat": 3,
+              "game_award": [
+                  {
+                      "id": 32049514,
+                      "game_arena_id": 4958910,
+                      "user_id": 267549,
+                      "box_id": 481,
+                      "award_id": 14815,
+                      "status": 1,
+                      "award_bean": "0.62",
+                      "level": 5,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 14815,
+                          "name": "\u5370\u82b1 | Ninjas in Pyjamas\uff08\u5168\u606f\uff09| 2020 RMR",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e99cebe1aa993f1c42eb189e5285b0e8.png",
+                          "dura": 0,
+                          "bean": "0.62",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 32049515,
+                      "game_arena_id": 4958910,
+                      "user_id": 267549,
+                      "box_id": 481,
+                      "award_id": 14815,
+                      "status": 1,
+                      "award_bean": "0.62",
+                      "level": 5,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 14815,
+                          "name": "\u5370\u82b1 | Ninjas in Pyjamas\uff08\u5168\u606f\uff09| 2020 RMR",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e99cebe1aa993f1c42eb189e5285b0e8.png",
+                          "dura": 0,
+                          "bean": "0.62",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 32049516,
+                      "game_arena_id": 4958910,
+                      "user_id": 267549,
+                      "box_id": 482,
+                      "award_id": 12028,
+                      "status": 1,
+                      "award_bean": "2.12",
+                      "level": 4,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12028,
+                          "name": "AK-47 | \u8ff7\u8e2a\u79d8\u5883",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/149213a15b19ac902e2ed51171e04929.png",
+                          "dura": 3,
+                          "bean": "2.12",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049517,
+                      "game_arena_id": 4958910,
+                      "user_id": 267549,
+                      "box_id": 482,
+                      "award_id": 12079,
+                      "status": 1,
+                      "award_bean": "4.45",
+                      "level": 4,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12079,
+                          "name": "AWP | \u54cd\u5c3e\u86c7",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/addc0b7abb1fee0f686a8ed808c5dc5c.png",
+                          "dura": 2,
+                          "bean": "4.45",
+                          "dura_alias": "\u7565\u6709\u78e8\u635f"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 267549,
+                  "name": "\u7528\u5fc3",
+                  "avatar": "https:\/\/api.mocsgo.com\/uploads\/default_avatar\/13.jpg"
+              }
+          },
+          {
+              "id": 12077563,
+              "game_arena_id": 4958910,
+              "user_id": 269389,
+              "seat": 0,
+              "game_award": [
+                  {
+                      "id": 32049442,
+                      "game_arena_id": 4958910,
+                      "user_id": 269389,
+                      "box_id": 481,
+                      "award_id": 7742,
+                      "status": 1,
+                      "award_bean": "9.79",
+                      "level": 3,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 7742,
+                          "name": "MP7 | \u8840\u8165\u8fd0\u52a8",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/fc6999d2b333989e316ff21e2ca5388d.png",
+                          "dura": 3,
+                          "bean": "9.79",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049443,
+                      "game_arena_id": 4958910,
+                      "user_id": 269389,
+                      "box_id": 481,
+                      "award_id": 12102,
+                      "status": 1,
+                      "award_bean": "0.78",
+                      "level": 5,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12102,
+                          "name": "AK-47 | \u72e9\u730e\u7f51\u683c",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/749f21d56402f75b9043bcef1788e694.png",
+                          "dura": 3,
+                          "bean": "0.78",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049444,
+                      "game_arena_id": 4958910,
+                      "user_id": 269389,
+                      "box_id": 482,
+                      "award_id": 12079,
+                      "status": 1,
+                      "award_bean": "4.45",
+                      "level": 4,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12079,
+                          "name": "AWP | \u54cd\u5c3e\u86c7",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/addc0b7abb1fee0f686a8ed808c5dc5c.png",
+                          "dura": 2,
+                          "bean": "4.45",
+                          "dura_alias": "\u7565\u6709\u78e8\u635f"
+                      }
+                  },
+                  {
+                      "id": 32049445,
+                      "game_arena_id": 4958910,
+                      "user_id": 269389,
+                      "box_id": 482,
+                      "award_id": 11995,
+                      "status": 1,
+                      "award_bean": "17.29",
+                      "level": 3,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 11995,
+                          "name": "AWP | \u732b\u732b\u72d7\u72d7",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ce5c885c75d3402e3e56ee243934282f.png",
+                          "dura": 2,
+                          "bean": "17.29",
+                          "dura_alias": "\u7565\u6709\u78e8\u635f"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 269389,
+                  "name": "\u5f00\u5f00\u5fc3\u5fc3\u88ab\u5403",
+                  "avatar": "https:\/\/api.mocsgo.com\/uploads\/default_avatar\/425.jpg"
+              }
+          },
+          {
+              "id": 12077583,
+              "game_arena_id": 4958910,
+              "user_id": 444001,
+              "seat": 1,
+              "game_award": [
+                  {
+                      "id": 32049499,
+                      "game_arena_id": 4958910,
+                      "user_id": 444001,
+                      "box_id": 481,
+                      "award_id": 12102,
+                      "status": 1,
+                      "award_bean": "0.78",
+                      "level": 5,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12102,
+                          "name": "AK-47 | \u72e9\u730e\u7f51\u683c",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/749f21d56402f75b9043bcef1788e694.png",
+                          "dura": 3,
+                          "bean": "0.78",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049500,
+                      "game_arena_id": 4958910,
+                      "user_id": 444001,
+                      "box_id": 481,
+                      "award_id": 12102,
+                      "status": 1,
+                      "award_bean": "0.78",
+                      "level": 5,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12102,
+                          "name": "AK-47 | \u72e9\u730e\u7f51\u683c",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/749f21d56402f75b9043bcef1788e694.png",
+                          "dura": 3,
+                          "bean": "0.78",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049501,
+                      "game_arena_id": 4958910,
+                      "user_id": 444001,
+                      "box_id": 482,
+                      "award_id": 11995,
+                      "status": 1,
+                      "award_bean": "17.29",
+                      "level": 3,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 11995,
+                          "name": "AWP | \u732b\u732b\u72d7\u72d7",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ce5c885c75d3402e3e56ee243934282f.png",
+                          "dura": 2,
+                          "bean": "17.29",
+                          "dura_alias": "\u7565\u6709\u78e8\u635f"
+                      }
+                  },
+                  {
+                      "id": 32049502,
+                      "game_arena_id": 4958910,
+                      "user_id": 444001,
+                      "box_id": 482,
+                      "award_id": 14341,
+                      "status": 1,
+                      "award_bean": "51.89",
+                      "level": 3,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 14341,
+                          "name": "AK-47 | \u5361\u7279\u5c14",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/7ac155a2a893283352bef4cf1071153c.png",
+                          "dura": 3,
+                          "bean": "51.89",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 444001,
+                  "name": "\u8212QY",
+                  "avatar": "https:\/\/api.mocsgo.com\/uploads\/default_avatar\/15.jpg"
+              }
+          },
+          {
+              "id": 12077584,
+              "game_arena_id": 4958910,
+              "user_id": 539050,
+              "seat": 2,
+              "game_award": [
+                  {
+                      "id": 32049503,
+                      "game_arena_id": 4958910,
+                      "user_id": 539050,
+                      "box_id": 481,
+                      "award_id": 24139,
+                      "status": 1,
+                      "award_bean": "5.81",
+                      "level": 3,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 24139,
+                          "name": "M4A1 \u6d88\u97f3\u578b | \u9690\u4f0f\u5e1d\u738b\u9f99",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2c4048c3b7bcd4a330e4846c717ad5f9.png",
+                          "dura": 3,
+                          "bean": "5.81",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049504,
+                      "game_arena_id": 4958910,
+                      "user_id": 539050,
+                      "box_id": 481,
+                      "award_id": 22143,
+                      "status": 1,
+                      "award_bean": "6.54",
+                      "level": 3,
+                      "box": {
+                          "id": 481,
+                          "type": 0,
+                          "name": "\u591c\u9ed1\u98ce\u9ad8",
+                          "intact_cover": "",
+                          "bean": "5.08",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 22143,
+                          "name": "2022\u5e74\u5b89\u7279\u536b\u666e\u9526\u6807\u8d5b\u4f20\u5947\u7ec4\u5370\u82b1\u80f6\u56ca",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/6b2c3d7587a11c0267e31da899289fc9.png",
+                          "dura": 0,
+                          "bean": "6.54",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 32049505,
+                      "game_arena_id": 4958910,
+                      "user_id": 539050,
+                      "box_id": 482,
+                      "award_id": 12028,
+                      "status": 1,
+                      "award_bean": "2.12",
+                      "level": 4,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 12028,
+                          "name": "AK-47 | \u8ff7\u8e2a\u79d8\u5883",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/149213a15b19ac902e2ed51171e04929.png",
+                          "dura": 3,
+                          "bean": "2.12",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 32049506,
+                      "game_arena_id": 4958910,
+                      "user_id": 539050,
+                      "box_id": 482,
+                      "award_id": 14532,
+                      "status": 1,
+                      "award_bean": "1659.76",
+                      "level": 1,
+                      "box": {
+                          "id": 482,
+                          "type": 0,
+                          "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                          "intact_cover": "",
+                          "bean": "12.00",
+                          "game_bean": "0.00"
+                      },
+                      "skins": {
+                          "id": 14532,
+                          "name": "\u8fd0\u52a8\u624b\u5957\uff08\u2605\uff09 | \u5927\u578b\u730e\u7269",
+                          "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/69610d4ae37eba6344d325d28e914acc.png",
+                          "dura": 3,
+                          "bean": "1659.76",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 539050,
+                  "name": "\u5783\u573e\u7f51\u5929\u5929\u767d\u7ed9",
+                  "avatar": "https:\/\/api.mocsgo.com\/uploads\/default_avatar\/275.jpg"
+              }
+          }
+      ],
+      "game_arena_box": [
+          {
+              "id": 12811136,
+              "game_arena_id": 4958910,
+              "box_id": 481,
+              "box": {
+                  "id": 481,
+                  "type": 0,
+                  "name": "\u591c\u9ed1\u98ce\u9ad8",
+                  "bean": "5.08",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/0e03a170ac97d3b49fd0644b538d7377.png",
+                  "weapon_cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/1b86c266b2e7e1d25a344c7a0ae26cad.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 19551,
+                          "box_id": 481,
+                          "skin_id": 12246,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 12246,
+                              "name": "AK-47 | \u71c3\u6599\u55b7\u5c04\u5668",
+                              "bean": "1454.24",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/01628898b8fd66959da675594ae8b6bd.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19552,
+                          "box_id": 481,
+                          "skin_id": 12007,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 12007,
+                              "name": "AK-47 | \u8840\u8165\u8fd0\u52a8",
+                              "bean": "766.87",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/08e623a8fef5e0a9ee1bd7cd527b1afd.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19556,
+                          "box_id": 481,
+                          "skin_id": 5645,
+                          "level": 1,
+                          "odds": 3,
+                          "odds_percent": "0.03%",
+                          "skins": {
+                              "id": 5645,
+                              "name": "\u6c99\u6f20\u4e4b\u9e70 | \u5370\u82b1\u96c6",
+                              "bean": "331.11",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/19cfb9de8d87b53a024570838e277473.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19560,
+                          "box_id": 481,
+                          "skin_id": 12114,
+                          "level": 2,
+                          "odds": 4,
+                          "odds_percent": "0.04%",
+                          "skins": {
+                              "id": 12114,
+                              "name": "AK-47 | \u524d\u7ebf\u8ff7\u96fe",
+                              "bean": "155.12",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2a45726455233088e653b31accbd02f9.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19580,
+                          "box_id": 481,
+                          "skin_id": 5897,
+                          "level": 2,
+                          "odds": 6,
+                          "odds_percent": "0.06%",
+                          "skins": {
+                              "id": 5897,
+                              "name": "USP \u6d88\u97f3\u7248 | \u5012\u540a\u4eba",
+                              "bean": "72.45",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0884a74fe84f8282a8fba2f50f5b628b.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19581,
+                          "box_id": 481,
+                          "skin_id": 14341,
+                          "level": 2,
+                          "odds": 8,
+                          "odds_percent": "0.08%",
+                          "skins": {
+                              "id": 14341,
+                              "name": "AK-47 | \u5361\u7279\u5c14",
+                              "bean": "54.29",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/7ac155a2a893283352bef4cf1071153c.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19565,
+                          "box_id": 481,
+                          "skin_id": 19325,
+                          "level": 2,
+                          "odds": 10,
+                          "odds_percent": "0.10%",
+                          "skins": {
+                              "id": 19325,
+                              "name": "AWP | \u590d\u53e4\u6d41\u884c",
+                              "bean": "40.69",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/fd1b4d1bcdd6d0fe8476e8cd061f73cb.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19566,
+                          "box_id": 481,
+                          "skin_id": 12206,
+                          "level": 3,
+                          "odds": 15,
+                          "odds_percent": "0.15%",
+                          "skins": {
+                              "id": 12206,
+                              "name": "AWP | \u4ea1\u7075\u4e4b\u4e3b",
+                              "bean": "24.70",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/b03ad96770e9755990c70b22a916c641.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19598,
+                          "box_id": 481,
+                          "skin_id": 21269,
+                          "level": 3,
+                          "odds": 20,
+                          "odds_percent": "0.20%",
+                          "skins": {
+                              "id": 21269,
+                              "name": "\u5370\u82b1 | Evil Geniuses \uff08\u5168\u606f\uff09 | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "17.85",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/798d1a16f44d331044578a273f1a63b8.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19595,
+                          "box_id": 481,
+                          "skin_id": 19358,
+                          "level": 3,
+                          "odds": 40,
+                          "odds_percent": "0.40%",
+                          "skins": {
+                              "id": 19358,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c14\u6ce1\u6d41\u884c",
+                              "bean": "16.47",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/a1318a856bc4f82e4dc6b0b23a4110fe.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19596,
+                          "box_id": 481,
+                          "skin_id": 12203,
+                          "level": 3,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 12203,
+                              "name": "AWP | \u8815\u866b\u4e4b\u795e",
+                              "bean": "16.44",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ecaff8ccbbbccc7bc72c7e2ab7d14d6f.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19597,
+                          "box_id": 481,
+                          "skin_id": 12118,
+                          "level": 3,
+                          "odds": 50,
+                          "odds_percent": "0.50%",
+                          "skins": {
+                              "id": 12118,
+                              "name": "AK-47 | \u58a8\u5ca9",
+                              "bean": "13.14",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d4d9f6a3013df1577b5d07f8bd3bff72.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19567,
+                          "box_id": 481,
+                          "skin_id": 12291,
+                          "level": 3,
+                          "odds": 55,
+                          "odds_percent": "0.55%",
+                          "skins": {
+                              "id": 12291,
+                              "name": "AK-47 | \u58a8\u5ca9",
+                              "bean": "11.73",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0ea291fcab62c340a9d9314af8d40e00.png",
+                              "dura": 5,
+                              "dura_alias": "\u6218\u75d5\u7d2f\u7d2f"
+                          }
+                      },
+                      {
+                          "id": 19594,
+                          "box_id": 481,
+                          "skin_id": 24126,
+                          "level": 3,
+                          "odds": 60,
+                          "odds_percent": "0.60%",
+                          "skins": {
+                              "id": 24126,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u9690\u4f0f\u5e1d\u738b\u9f99",
+                              "bean": "11.21",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e754503a8fca82d085a53bf2fec3912e.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19593,
+                          "box_id": 481,
+                          "skin_id": 12042,
+                          "level": 3,
+                          "odds": 100,
+                          "odds_percent": "1.00%",
+                          "skins": {
+                              "id": 12042,
+                              "name": "AWP | \u6b7b\u795e",
+                              "bean": "10.70",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/3c5061bd165afea77154248280e95a6a.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19569,
+                          "box_id": 481,
+                          "skin_id": 7742,
+                          "level": 3,
+                          "odds": 200,
+                          "odds_percent": "2.00%",
+                          "skins": {
+                              "id": 7742,
+                              "name": "MP7 | \u8840\u8165\u8fd0\u52a8",
+                              "bean": "9.21",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/fc6999d2b333989e316ff21e2ca5388d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19592,
+                          "box_id": 481,
+                          "skin_id": 24101,
+                          "level": 3,
+                          "odds": 300,
+                          "odds_percent": "3.00%",
+                          "skins": {
+                              "id": 24101,
+                              "name": "MAC-10 | \u9519\u89c9",
+                              "bean": "8.36",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/47f9b106328c4237d2842b0aaa6947c2.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19591,
+                          "box_id": 481,
+                          "skin_id": 12247,
+                          "level": 3,
+                          "odds": 400,
+                          "odds_percent": "4.00%",
+                          "skins": {
+                              "id": 12247,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c2e\u5316\u5904\u7406",
+                              "bean": "7.67",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/dc112045e5add7820f16d791fc128b87.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19585,
+                          "box_id": 481,
+                          "skin_id": 21258,
+                          "level": 3,
+                          "odds": 500,
+                          "odds_percent": "5.00%",
+                          "skins": {
+                              "id": 21258,
+                              "name": "\u5370\u82b1 | Ninjas in Pyjamas \uff08\u5168\u606f\uff09 | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "6.62",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/b7fb05a03cb0dc3cfd508f0774c302ae.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19586,
+                          "box_id": 481,
+                          "skin_id": 22143,
+                          "level": 3,
+                          "odds": 617,
+                          "odds_percent": "6.17%",
+                          "skins": {
+                              "id": 22143,
+                              "name": "2022\u5e74\u5b89\u7279\u536b\u666e\u9526\u6807\u8d5b\u4f20\u5947\u7ec4\u5370\u82b1\u80f6\u56ca",
+                              "bean": "6.55",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/6b2c3d7587a11c0267e31da899289fc9.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19583,
+                          "box_id": 481,
+                          "skin_id": 12220,
+                          "level": 4,
+                          "odds": 700,
+                          "odds_percent": "7.00%",
+                          "skins": {
+                              "id": 12220,
+                              "name": "AWP | \u51a5\u754c\u4e4b\u6cb3",
+                              "bean": "6.28",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2e1c60d40d2714cbcaa3fb91ae815279.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19584,
+                          "box_id": 481,
+                          "skin_id": 24139,
+                          "level": 4,
+                          "odds": 800,
+                          "odds_percent": "8.00%",
+                          "skins": {
+                              "id": 24139,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u9690\u4f0f\u5e1d\u738b\u9f99",
+                              "bean": "5.98",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2c4048c3b7bcd4a330e4846c717ad5f9.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19574,
+                          "box_id": 481,
+                          "skin_id": 5768,
+                          "level": 4,
+                          "odds": 979,
+                          "odds_percent": "9.79%",
+                          "skins": {
+                              "id": 5768,
+                              "name": "\u53cc\u6301\u8d1d\u745e\u5854 | \u94b4\u84dd\u77f3\u82f1",
+                              "bean": "2.91",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/33bfc9cd16ecb2dec15811623a7ecbc0.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19575,
+                          "box_id": 481,
+                          "skin_id": 14846,
+                          "level": 4,
+                          "odds": 1100,
+                          "odds_percent": "11.00%",
+                          "skins": {
+                              "id": 14846,
+                              "name": "\u5370\u82b1 | North\uff08\u5168\u606f\uff09| 2020 RMR",
+                              "bean": "2.77",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d2f1514d7f400aa81f9eb4cb6c26084f.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19577,
+                          "box_id": 481,
+                          "skin_id": 12102,
+                          "level": 5,
+                          "odds": 1500,
+                          "odds_percent": "15.00%",
+                          "skins": {
+                              "id": 12102,
+                              "name": "AK-47 | \u72e9\u730e\u7f51\u683c",
+                              "bean": "0.81",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/749f21d56402f75b9043bcef1788e694.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19698,
+                          "box_id": 481,
+                          "skin_id": 14815,
+                          "level": 5,
+                          "odds": 2500,
+                          "odds_percent": "25.00%",
+                          "skins": {
+                              "id": 14815,
+                              "name": "\u5370\u82b1 | Ninjas in Pyjamas\uff08\u5168\u606f\uff09| 2020 RMR",
+                              "bean": "0.61",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e99cebe1aa993f1c42eb189e5285b0e8.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "id": 12811137,
+              "game_arena_id": 4958910,
+              "box_id": 481,
+              "box": {
+                  "id": 481,
+                  "type": 0,
+                  "name": "\u591c\u9ed1\u98ce\u9ad8",
+                  "bean": "5.08",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/0e03a170ac97d3b49fd0644b538d7377.png",
+                  "weapon_cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/1b86c266b2e7e1d25a344c7a0ae26cad.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 19551,
+                          "box_id": 481,
+                          "skin_id": 12246,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 12246,
+                              "name": "AK-47 | \u71c3\u6599\u55b7\u5c04\u5668",
+                              "bean": "1454.24",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/01628898b8fd66959da675594ae8b6bd.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19552,
+                          "box_id": 481,
+                          "skin_id": 12007,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 12007,
+                              "name": "AK-47 | \u8840\u8165\u8fd0\u52a8",
+                              "bean": "766.87",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/08e623a8fef5e0a9ee1bd7cd527b1afd.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19556,
+                          "box_id": 481,
+                          "skin_id": 5645,
+                          "level": 1,
+                          "odds": 3,
+                          "odds_percent": "0.03%",
+                          "skins": {
+                              "id": 5645,
+                              "name": "\u6c99\u6f20\u4e4b\u9e70 | \u5370\u82b1\u96c6",
+                              "bean": "331.11",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/19cfb9de8d87b53a024570838e277473.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19560,
+                          "box_id": 481,
+                          "skin_id": 12114,
+                          "level": 2,
+                          "odds": 4,
+                          "odds_percent": "0.04%",
+                          "skins": {
+                              "id": 12114,
+                              "name": "AK-47 | \u524d\u7ebf\u8ff7\u96fe",
+                              "bean": "155.12",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2a45726455233088e653b31accbd02f9.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19580,
+                          "box_id": 481,
+                          "skin_id": 5897,
+                          "level": 2,
+                          "odds": 6,
+                          "odds_percent": "0.06%",
+                          "skins": {
+                              "id": 5897,
+                              "name": "USP \u6d88\u97f3\u7248 | \u5012\u540a\u4eba",
+                              "bean": "72.45",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0884a74fe84f8282a8fba2f50f5b628b.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19581,
+                          "box_id": 481,
+                          "skin_id": 14341,
+                          "level": 2,
+                          "odds": 8,
+                          "odds_percent": "0.08%",
+                          "skins": {
+                              "id": 14341,
+                              "name": "AK-47 | \u5361\u7279\u5c14",
+                              "bean": "54.29",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/7ac155a2a893283352bef4cf1071153c.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19565,
+                          "box_id": 481,
+                          "skin_id": 19325,
+                          "level": 2,
+                          "odds": 10,
+                          "odds_percent": "0.10%",
+                          "skins": {
+                              "id": 19325,
+                              "name": "AWP | \u590d\u53e4\u6d41\u884c",
+                              "bean": "40.69",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/fd1b4d1bcdd6d0fe8476e8cd061f73cb.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19566,
+                          "box_id": 481,
+                          "skin_id": 12206,
+                          "level": 3,
+                          "odds": 15,
+                          "odds_percent": "0.15%",
+                          "skins": {
+                              "id": 12206,
+                              "name": "AWP | \u4ea1\u7075\u4e4b\u4e3b",
+                              "bean": "24.70",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/b03ad96770e9755990c70b22a916c641.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19598,
+                          "box_id": 481,
+                          "skin_id": 21269,
+                          "level": 3,
+                          "odds": 20,
+                          "odds_percent": "0.20%",
+                          "skins": {
+                              "id": 21269,
+                              "name": "\u5370\u82b1 | Evil Geniuses \uff08\u5168\u606f\uff09 | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "17.85",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/798d1a16f44d331044578a273f1a63b8.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19595,
+                          "box_id": 481,
+                          "skin_id": 19358,
+                          "level": 3,
+                          "odds": 40,
+                          "odds_percent": "0.40%",
+                          "skins": {
+                              "id": 19358,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c14\u6ce1\u6d41\u884c",
+                              "bean": "16.47",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/a1318a856bc4f82e4dc6b0b23a4110fe.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19596,
+                          "box_id": 481,
+                          "skin_id": 12203,
+                          "level": 3,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 12203,
+                              "name": "AWP | \u8815\u866b\u4e4b\u795e",
+                              "bean": "16.44",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ecaff8ccbbbccc7bc72c7e2ab7d14d6f.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19597,
+                          "box_id": 481,
+                          "skin_id": 12118,
+                          "level": 3,
+                          "odds": 50,
+                          "odds_percent": "0.50%",
+                          "skins": {
+                              "id": 12118,
+                              "name": "AK-47 | \u58a8\u5ca9",
+                              "bean": "13.14",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d4d9f6a3013df1577b5d07f8bd3bff72.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19567,
+                          "box_id": 481,
+                          "skin_id": 12291,
+                          "level": 3,
+                          "odds": 55,
+                          "odds_percent": "0.55%",
+                          "skins": {
+                              "id": 12291,
+                              "name": "AK-47 | \u58a8\u5ca9",
+                              "bean": "11.73",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0ea291fcab62c340a9d9314af8d40e00.png",
+                              "dura": 5,
+                              "dura_alias": "\u6218\u75d5\u7d2f\u7d2f"
+                          }
+                      },
+                      {
+                          "id": 19594,
+                          "box_id": 481,
+                          "skin_id": 24126,
+                          "level": 3,
+                          "odds": 60,
+                          "odds_percent": "0.60%",
+                          "skins": {
+                              "id": 24126,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u9690\u4f0f\u5e1d\u738b\u9f99",
+                              "bean": "11.21",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e754503a8fca82d085a53bf2fec3912e.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19593,
+                          "box_id": 481,
+                          "skin_id": 12042,
+                          "level": 3,
+                          "odds": 100,
+                          "odds_percent": "1.00%",
+                          "skins": {
+                              "id": 12042,
+                              "name": "AWP | \u6b7b\u795e",
+                              "bean": "10.70",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/3c5061bd165afea77154248280e95a6a.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19569,
+                          "box_id": 481,
+                          "skin_id": 7742,
+                          "level": 3,
+                          "odds": 200,
+                          "odds_percent": "2.00%",
+                          "skins": {
+                              "id": 7742,
+                              "name": "MP7 | \u8840\u8165\u8fd0\u52a8",
+                              "bean": "9.21",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/fc6999d2b333989e316ff21e2ca5388d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19592,
+                          "box_id": 481,
+                          "skin_id": 24101,
+                          "level": 3,
+                          "odds": 300,
+                          "odds_percent": "3.00%",
+                          "skins": {
+                              "id": 24101,
+                              "name": "MAC-10 | \u9519\u89c9",
+                              "bean": "8.36",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/47f9b106328c4237d2842b0aaa6947c2.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19591,
+                          "box_id": 481,
+                          "skin_id": 12247,
+                          "level": 3,
+                          "odds": 400,
+                          "odds_percent": "4.00%",
+                          "skins": {
+                              "id": 12247,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c2e\u5316\u5904\u7406",
+                              "bean": "7.67",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/dc112045e5add7820f16d791fc128b87.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19585,
+                          "box_id": 481,
+                          "skin_id": 21258,
+                          "level": 3,
+                          "odds": 500,
+                          "odds_percent": "5.00%",
+                          "skins": {
+                              "id": 21258,
+                              "name": "\u5370\u82b1 | Ninjas in Pyjamas \uff08\u5168\u606f\uff09 | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "6.62",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/b7fb05a03cb0dc3cfd508f0774c302ae.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19586,
+                          "box_id": 481,
+                          "skin_id": 22143,
+                          "level": 3,
+                          "odds": 617,
+                          "odds_percent": "6.17%",
+                          "skins": {
+                              "id": 22143,
+                              "name": "2022\u5e74\u5b89\u7279\u536b\u666e\u9526\u6807\u8d5b\u4f20\u5947\u7ec4\u5370\u82b1\u80f6\u56ca",
+                              "bean": "6.55",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/6b2c3d7587a11c0267e31da899289fc9.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19583,
+                          "box_id": 481,
+                          "skin_id": 12220,
+                          "level": 4,
+                          "odds": 700,
+                          "odds_percent": "7.00%",
+                          "skins": {
+                              "id": 12220,
+                              "name": "AWP | \u51a5\u754c\u4e4b\u6cb3",
+                              "bean": "6.28",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2e1c60d40d2714cbcaa3fb91ae815279.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19584,
+                          "box_id": 481,
+                          "skin_id": 24139,
+                          "level": 4,
+                          "odds": 800,
+                          "odds_percent": "8.00%",
+                          "skins": {
+                              "id": 24139,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u9690\u4f0f\u5e1d\u738b\u9f99",
+                              "bean": "5.98",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/2c4048c3b7bcd4a330e4846c717ad5f9.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19574,
+                          "box_id": 481,
+                          "skin_id": 5768,
+                          "level": 4,
+                          "odds": 979,
+                          "odds_percent": "9.79%",
+                          "skins": {
+                              "id": 5768,
+                              "name": "\u53cc\u6301\u8d1d\u745e\u5854 | \u94b4\u84dd\u77f3\u82f1",
+                              "bean": "2.91",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/33bfc9cd16ecb2dec15811623a7ecbc0.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19575,
+                          "box_id": 481,
+                          "skin_id": 14846,
+                          "level": 4,
+                          "odds": 1100,
+                          "odds_percent": "11.00%",
+                          "skins": {
+                              "id": 14846,
+                              "name": "\u5370\u82b1 | North\uff08\u5168\u606f\uff09| 2020 RMR",
+                              "bean": "2.77",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d2f1514d7f400aa81f9eb4cb6c26084f.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19577,
+                          "box_id": 481,
+                          "skin_id": 12102,
+                          "level": 5,
+                          "odds": 1500,
+                          "odds_percent": "15.00%",
+                          "skins": {
+                              "id": 12102,
+                              "name": "AK-47 | \u72e9\u730e\u7f51\u683c",
+                              "bean": "0.81",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/749f21d56402f75b9043bcef1788e694.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19698,
+                          "box_id": 481,
+                          "skin_id": 14815,
+                          "level": 5,
+                          "odds": 2500,
+                          "odds_percent": "25.00%",
+                          "skins": {
+                              "id": 14815,
+                              "name": "\u5370\u82b1 | Ninjas in Pyjamas\uff08\u5168\u606f\uff09| 2020 RMR",
+                              "bean": "0.61",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/e99cebe1aa993f1c42eb189e5285b0e8.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "id": 12811138,
+              "game_arena_id": 4958910,
+              "box_id": 482,
+              "box": {
+                  "id": 482,
+                  "type": 0,
+                  "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                  "bean": "12.00",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/8994f46379c209fe9978491a01edfdfa.png",
+                  "weapon_cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/910b5cbf53f2bd24b54def6f30ccfb85.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 19622,
+                          "box_id": 482,
+                          "skin_id": 19043,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 19043,
+                              "name": "\u730e\u6740\u8005\u5315\u9996\uff08\u2605\uff09 | \u4f3d\u739b\u591a\u666e\u52d2",
+                              "bean": "3361.56",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/837084404953a40dc1ca02885e055e1a.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19623,
+                          "box_id": 482,
+                          "skin_id": 14532,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 14532,
+                              "name": "\u8fd0\u52a8\u624b\u5957\uff08\u2605\uff09 | \u5927\u578b\u730e\u7269",
+                              "bean": "1571.01",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/69610d4ae37eba6344d325d28e914acc.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19624,
+                          "box_id": 482,
+                          "skin_id": 12122,
+                          "level": 1,
+                          "odds": 3,
+                          "odds_percent": "0.03%",
+                          "skins": {
+                              "id": 12122,
+                              "name": "AWP | \u4e8c\u897f\u83ab\u592b",
+                              "bean": "830.92",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d1e4ad055dbec53afafd68473ddf9289.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19625,
+                          "box_id": 482,
+                          "skin_id": 20524,
+                          "level": 2,
+                          "odds": 4,
+                          "odds_percent": "0.04%",
+                          "skins": {
+                              "id": 20524,
+                              "name": "AK-47\uff08StatTrak\u2122\uff09 | \u591c\u613f",
+                              "bean": "460.35",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ca34694078a46033a78a495e87a91e79.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19626,
+                          "box_id": 482,
+                          "skin_id": 14328,
+                          "level": 2,
+                          "odds": 5,
+                          "odds_percent": "0.05%",
+                          "skins": {
+                              "id": 14328,
+                              "name": "AK-47 | \u7687\u540e",
+                              "bean": "308.16",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/4486ae59286102041958bf24462e74bc.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19627,
+                          "box_id": 482,
+                          "skin_id": 19306,
+                          "level": 2,
+                          "odds": 8,
+                          "odds_percent": "0.08%",
+                          "skins": {
+                              "id": 19306,
+                              "name": "AK-47 | \u62bd\u8c61\u6d3e 1337",
+                              "bean": "166.08",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/c3d53c9aabd3415e82bf4bbcda1e0628.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19628,
+                          "box_id": 482,
+                          "skin_id": 5930,
+                          "level": 3,
+                          "odds": 15,
+                          "odds_percent": "0.15%",
+                          "skins": {
+                              "id": 5930,
+                              "name": "\u683c\u6d1b\u514b 18 \u578b | \u5b50\u5f39\u7687\u540e",
+                              "bean": "90.93",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/3ee78c70be4f7f9bcbfc8a8d4d46e36b.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19630,
+                          "box_id": 482,
+                          "skin_id": 12544,
+                          "level": 3,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 12544,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u68a6\u9b47",
+                              "bean": "64.96",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/cc93f0d33b79bab90a8f4108736ec9c9.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19629,
+                          "box_id": 482,
+                          "skin_id": 12051,
+                          "level": 3,
+                          "odds": 40,
+                          "odds_percent": "0.40%",
+                          "skins": {
+                              "id": 12051,
+                              "name": "M4A4 | \u55a7\u56a3\u6740\u622e",
+                              "bean": "54.91",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/75e7abf042a00ea849b841d8dfe23fcc.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19631,
+                          "box_id": 482,
+                          "skin_id": 14341,
+                          "level": 3,
+                          "odds": 60,
+                          "odds_percent": "0.60%",
+                          "skins": {
+                              "id": 14341,
+                              "name": "AK-47 | \u5361\u7279\u5c14",
+                              "bean": "54.29",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/7ac155a2a893283352bef4cf1071153c.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19632,
+                          "box_id": 482,
+                          "skin_id": 12017,
+                          "level": 3,
+                          "odds": 100,
+                          "odds_percent": "1.00%",
+                          "skins": {
+                              "id": 12017,
+                              "name": "AK-47 | \u7cbe\u82f1\u4e4b\u4f5c",
+                              "bean": "35.71",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d8d58f8f0693dc0c36be2339d058e401.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19633,
+                          "box_id": 482,
+                          "skin_id": 5674,
+                          "level": 3,
+                          "odds": 250,
+                          "odds_percent": "2.50%",
+                          "skins": {
+                              "id": 5674,
+                              "name": "\u6c99\u6f20\u4e4b\u9e70 | \u673a\u68b0\u5de5\u4e1a",
+                              "bean": "34.25",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/129c94f2eb633b8490754c915fcc7e7a.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19636,
+                          "box_id": 482,
+                          "skin_id": 5705,
+                          "level": 3,
+                          "odds": 350,
+                          "odds_percent": "3.50%",
+                          "skins": {
+                              "id": 5705,
+                              "name": "USP \u6d88\u97f3\u7248 | \u4e0d\u9508\u94a2",
+                              "bean": "28.03",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ba4737edb9b017473b95a616425b4f2d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19634,
+                          "box_id": 482,
+                          "skin_id": 5725,
+                          "level": 3,
+                          "odds": 400,
+                          "odds_percent": "4.00%",
+                          "skins": {
+                              "id": 5725,
+                              "name": "USP \u6d88\u97f3\u7248 | \u8111\u6d1e\u5927\u5f00",
+                              "bean": "25.69",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/108a6944f96b1220bb620de83857ccd7.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19635,
+                          "box_id": 482,
+                          "skin_id": 11317,
+                          "level": 3,
+                          "odds": 500,
+                          "odds_percent": "5.00%",
+                          "skins": {
+                              "id": 11317,
+                              "name": "B \u4e2d\u961f\u6307\u6325\u5b98 | \u82f1\u56fd\u7a7a\u519b\u7279\u522b\u90e8\u961f",
+                              "bean": "23.87",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0967c618ae776b3742cb531b9e67fdc3.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19637,
+                          "box_id": 482,
+                          "skin_id": 11995,
+                          "level": 3,
+                          "odds": 742,
+                          "odds_percent": "7.42%",
+                          "skins": {
+                              "id": 11995,
+                              "name": "AWP | \u732b\u732b\u72d7\u72d7",
+                              "bean": "16.78",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ce5c885c75d3402e3e56ee243934282f.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19638,
+                          "box_id": 482,
+                          "skin_id": 12247,
+                          "level": 4,
+                          "odds": 1090,
+                          "odds_percent": "10.90%",
+                          "skins": {
+                              "id": 12247,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c2e\u5316\u5904\u7406",
+                              "bean": "7.67",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/dc112045e5add7820f16d791fc128b87.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19639,
+                          "box_id": 482,
+                          "skin_id": 12079,
+                          "level": 4,
+                          "odds": 1600,
+                          "odds_percent": "16.00%",
+                          "skins": {
+                              "id": 12079,
+                              "name": "AWP | \u54cd\u5c3e\u86c7",
+                              "bean": "4.41",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/addc0b7abb1fee0f686a8ed808c5dc5c.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19640,
+                          "box_id": 482,
+                          "skin_id": 12028,
+                          "level": 4,
+                          "odds": 2100,
+                          "odds_percent": "21.00%",
+                          "skins": {
+                              "id": 12028,
+                              "name": "AK-47 | \u8ff7\u8e2a\u79d8\u5883",
+                              "bean": "2.02",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/149213a15b19ac902e2ed51171e04929.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19641,
+                          "box_id": 482,
+                          "skin_id": 21095,
+                          "level": 4,
+                          "odds": 2700,
+                          "odds_percent": "27.00%",
+                          "skins": {
+                              "id": 21095,
+                              "name": "\u5370\u82b1 | Natus Vincere | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "0.50",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/1329c8822f18ba00dff7dbbb3648f139.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "id": 12811139,
+              "game_arena_id": 4958910,
+              "box_id": 482,
+              "box": {
+                  "id": 482,
+                  "type": 0,
+                  "name": "\u5c0f\u9b3c\u5f53\u5bb6",
+                  "bean": "12.00",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/8994f46379c209fe9978491a01edfdfa.png",
+                  "weapon_cover": "https:\/\/api.mocsgo.com\/uploads\/images\/box\/910b5cbf53f2bd24b54def6f30ccfb85.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 19622,
+                          "box_id": 482,
+                          "skin_id": 19043,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 19043,
+                              "name": "\u730e\u6740\u8005\u5315\u9996\uff08\u2605\uff09 | \u4f3d\u739b\u591a\u666e\u52d2",
+                              "bean": "3361.56",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/837084404953a40dc1ca02885e055e1a.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19623,
+                          "box_id": 482,
+                          "skin_id": 14532,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 14532,
+                              "name": "\u8fd0\u52a8\u624b\u5957\uff08\u2605\uff09 | \u5927\u578b\u730e\u7269",
+                              "bean": "1571.01",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/69610d4ae37eba6344d325d28e914acc.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19624,
+                          "box_id": 482,
+                          "skin_id": 12122,
+                          "level": 1,
+                          "odds": 3,
+                          "odds_percent": "0.03%",
+                          "skins": {
+                              "id": 12122,
+                              "name": "AWP | \u4e8c\u897f\u83ab\u592b",
+                              "bean": "830.92",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d1e4ad055dbec53afafd68473ddf9289.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19625,
+                          "box_id": 482,
+                          "skin_id": 20524,
+                          "level": 2,
+                          "odds": 4,
+                          "odds_percent": "0.04%",
+                          "skins": {
+                              "id": 20524,
+                              "name": "AK-47\uff08StatTrak\u2122\uff09 | \u591c\u613f",
+                              "bean": "460.35",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ca34694078a46033a78a495e87a91e79.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19626,
+                          "box_id": 482,
+                          "skin_id": 14328,
+                          "level": 2,
+                          "odds": 5,
+                          "odds_percent": "0.05%",
+                          "skins": {
+                              "id": 14328,
+                              "name": "AK-47 | \u7687\u540e",
+                              "bean": "308.16",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/4486ae59286102041958bf24462e74bc.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19627,
+                          "box_id": 482,
+                          "skin_id": 19306,
+                          "level": 2,
+                          "odds": 8,
+                          "odds_percent": "0.08%",
+                          "skins": {
+                              "id": 19306,
+                              "name": "AK-47 | \u62bd\u8c61\u6d3e 1337",
+                              "bean": "166.08",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/c3d53c9aabd3415e82bf4bbcda1e0628.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19628,
+                          "box_id": 482,
+                          "skin_id": 5930,
+                          "level": 3,
+                          "odds": 15,
+                          "odds_percent": "0.15%",
+                          "skins": {
+                              "id": 5930,
+                              "name": "\u683c\u6d1b\u514b 18 \u578b | \u5b50\u5f39\u7687\u540e",
+                              "bean": "90.93",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/3ee78c70be4f7f9bcbfc8a8d4d46e36b.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19630,
+                          "box_id": 482,
+                          "skin_id": 12544,
+                          "level": 3,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 12544,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u68a6\u9b47",
+                              "bean": "64.96",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/cc93f0d33b79bab90a8f4108736ec9c9.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19629,
+                          "box_id": 482,
+                          "skin_id": 12051,
+                          "level": 3,
+                          "odds": 40,
+                          "odds_percent": "0.40%",
+                          "skins": {
+                              "id": 12051,
+                              "name": "M4A4 | \u55a7\u56a3\u6740\u622e",
+                              "bean": "54.91",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/75e7abf042a00ea849b841d8dfe23fcc.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19631,
+                          "box_id": 482,
+                          "skin_id": 14341,
+                          "level": 3,
+                          "odds": 60,
+                          "odds_percent": "0.60%",
+                          "skins": {
+                              "id": 14341,
+                              "name": "AK-47 | \u5361\u7279\u5c14",
+                              "bean": "54.29",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/7ac155a2a893283352bef4cf1071153c.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19632,
+                          "box_id": 482,
+                          "skin_id": 12017,
+                          "level": 3,
+                          "odds": 100,
+                          "odds_percent": "1.00%",
+                          "skins": {
+                              "id": 12017,
+                              "name": "AK-47 | \u7cbe\u82f1\u4e4b\u4f5c",
+                              "bean": "35.71",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/d8d58f8f0693dc0c36be2339d058e401.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 19633,
+                          "box_id": 482,
+                          "skin_id": 5674,
+                          "level": 3,
+                          "odds": 250,
+                          "odds_percent": "2.50%",
+                          "skins": {
+                              "id": 5674,
+                              "name": "\u6c99\u6f20\u4e4b\u9e70 | \u673a\u68b0\u5de5\u4e1a",
+                              "bean": "34.25",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/129c94f2eb633b8490754c915fcc7e7a.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19636,
+                          "box_id": 482,
+                          "skin_id": 5705,
+                          "level": 3,
+                          "odds": 350,
+                          "odds_percent": "3.50%",
+                          "skins": {
+                              "id": 5705,
+                              "name": "USP \u6d88\u97f3\u7248 | \u4e0d\u9508\u94a2",
+                              "bean": "28.03",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ba4737edb9b017473b95a616425b4f2d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19634,
+                          "box_id": 482,
+                          "skin_id": 5725,
+                          "level": 3,
+                          "odds": 400,
+                          "odds_percent": "4.00%",
+                          "skins": {
+                              "id": 5725,
+                              "name": "USP \u6d88\u97f3\u7248 | \u8111\u6d1e\u5927\u5f00",
+                              "bean": "25.69",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/108a6944f96b1220bb620de83857ccd7.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19635,
+                          "box_id": 482,
+                          "skin_id": 11317,
+                          "level": 3,
+                          "odds": 500,
+                          "odds_percent": "5.00%",
+                          "skins": {
+                              "id": 11317,
+                              "name": "B \u4e2d\u961f\u6307\u6325\u5b98 | \u82f1\u56fd\u7a7a\u519b\u7279\u522b\u90e8\u961f",
+                              "bean": "23.87",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/0967c618ae776b3742cb531b9e67fdc3.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      },
+                      {
+                          "id": 19637,
+                          "box_id": 482,
+                          "skin_id": 11995,
+                          "level": 3,
+                          "odds": 742,
+                          "odds_percent": "7.42%",
+                          "skins": {
+                              "id": 11995,
+                              "name": "AWP | \u732b\u732b\u72d7\u72d7",
+                              "bean": "16.78",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/ce5c885c75d3402e3e56ee243934282f.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19638,
+                          "box_id": 482,
+                          "skin_id": 12247,
+                          "level": 4,
+                          "odds": 1090,
+                          "odds_percent": "10.90%",
+                          "skins": {
+                              "id": 12247,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u6c2e\u5316\u5904\u7406",
+                              "bean": "7.67",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/dc112045e5add7820f16d791fc128b87.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19639,
+                          "box_id": 482,
+                          "skin_id": 12079,
+                          "level": 4,
+                          "odds": 1600,
+                          "odds_percent": "16.00%",
+                          "skins": {
+                              "id": 12079,
+                              "name": "AWP | \u54cd\u5c3e\u86c7",
+                              "bean": "4.41",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/addc0b7abb1fee0f686a8ed808c5dc5c.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 19640,
+                          "box_id": 482,
+                          "skin_id": 12028,
+                          "level": 4,
+                          "odds": 2100,
+                          "odds_percent": "21.00%",
+                          "skins": {
+                              "id": 12028,
+                              "name": "AK-47 | \u8ff7\u8e2a\u79d8\u5883",
+                              "bean": "2.02",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/149213a15b19ac902e2ed51171e04929.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 19641,
+                          "box_id": 482,
+                          "skin_id": 21095,
+                          "level": 4,
+                          "odds": 2700,
+                          "odds_percent": "27.00%",
+                          "skins": {
+                              "id": 21095,
+                              "name": "\u5370\u82b1 | Natus Vincere | 2021\u5e74\u65af\u5fb7\u54e5\u5c14\u6469\u9526\u6807\u8d5b",
+                              "bean": "0.50",
+                              "cover": "https:\/\/api.mocsgo.com\/uploads\/images\/skins\/1329c8822f18ba00dff7dbbb3648f139.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          }
+      ]
+  },
+  "timestamp": 1699409162
+}
