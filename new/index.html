@@ -15,18 +15,27 @@
 <body>
   <div id='app'>
     <div class="box">
-      <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json" :autosize="{ minRows: 7,maxRows: 7}">
-      </el-input>
-      <el-button type="danger" plain @click="clearAll()">清空</el-button>
-      <el-button type="primary" plain @click="confirm()">确定</el-button>
-      <el-button type="info" plain @click="paste()">粘贴</el-button>
-      <div v-if="totalPrice">总价值：<span class="keyNumber">{{totalPrice}}</span> >>> 盈利：<span class="totalPriceColor">{{profit }}</span></div>
-      <p v-if="info.ticket.length">看过的门票：<span class="keyNumber ticketDom" v-for="e in info.ticket">{{e}}</span> </p>
-      <div class="infoBox" v-if="info.roomInfo.length">
-        <div v-for="item in info.roomInfo" v-html="item.label">
-          {{item.label}}
+
+      <div class="">
+        <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="json1" :autosize="{ minRows: 7,maxRows: 7}">
+        </el-input>
+
+        <el-button type="danger"plain  @click="oneClear(1)">清空</el-button>
+        <el-button type="primary" plain @click="oneClick(1,info1)">确定</el-button>
+        <el-button type="info" plain @click="paste(1,info1)">粘贴</el-button>
+
+        <div v-if="totalPrice">总价值：<span class="keyNumber">{{totalPrice}}</span> >>> 盈利：<span class="totalPriceColor">{{profit }}</span></div>
+        <p v-if="info1.ticket.length">看过的门票：<span class="keyNumber ticketDom" v-for="e in info1.ticket">{{e}}</span> </p>
+        <div class="infoBox" v-if="info1.roomInfo.length">
+          <div v-for="item in info1.roomInfo" v-html="item">
+            {{item}}
+          </div>
+                <!-- <p v-if="info1.avg">平均值：<span class="keyNumber">{{info1.avg}}</span></p>
+                <p v-if="info1.totalPrice">当前人数的总价值：<span class="keyNumber">{{info1.totalPrice}}</span></p> -->
         </div>
       </div>
+
+
     </div>
   </div>
   <script>
@@ -34,13 +43,14 @@
       el: '#app',
       data () {
         return {
-          json: null,
-          info: {
+          json1: null,
+          info1: {
             roomInfo: [],
-            // roomInfo2: [],
+            roomInfo2: [],
             ticket: [],//门票
             avg: null,
             // totalPrice: null //房间目前人资产总价值
+
           },
           totalPrice:0,
           profit:null
@@ -51,113 +61,139 @@
 
       },
       methods: {
+        //   calculateProfit(prices,listLength) { //计算利润
+        //   if (prices.length !== listLength) {
+        //     return null; // 确保输入了三个价格
+        //   }
+
+        //   console.log('12312321',prices);
+        //   // 计算总投入
+        //   const totalInvestment = prices.reduce((acc, price) => this.preciseAdd(acc, price), 0);
+          
+        //   // 找到最低价格及其出现次数
+        //   const minPrice = Math.min(...prices);
+        //   const occurrences = prices.filter(price => price === minPrice).length;
+          
+        //   // 如果有两个或三个最低价，它们平分奖励
+        //   if (occurrences > 1) {
+        //     return (totalInvestment / occurrences.length) - minPrice;
+        //   } else {
+        //     // 如果只有一个最低价，那个价格获胜
+        //     return totalInvestment - minPrice;
+        //   }
+        // },
+        calculateBlindBoxProfit(prices, ticketPrice) {
+          // 计算总投入，包括门票费用
+          // const totalInvestment = prices.reduce((acc, price) => acc + price, 0) + prices.length * ticketPrice;
+          const totalInvestment = prices.reduce((acc, price) => {
+            console.log(price,acc);
+          }, 0) 
+          // + prices.length * ticketPrice;
+          // 找到最低价格及其出现次数
+          const minPrice = Math.min(...prices);
+          const winners = prices.filter(price => price === minPrice).length;
+          
+          // 计算盈利
+          let profit;
+          if (winners > 1) {
+            // 如果有多个最低价，它们平分奖励，并且每个人需要减去自己的门票费用
+            profit = (totalInvestment / winners) - ticketPrice;
+          } else {
+            // 如果只有一个最低价，那个价格的拥有者获胜，并且需要减去门票费用
+            profit = totalInvestment - ticketPrice - minPrice;
+          }
+          
+          return profit;
+        },
         // -------------解决js计算精度丢失的问题-----------------
-        parseNumber (num) {
-          if (typeof num !== 'number') num = parseFloat(num);
-          if (Number.isNaN(num)) throw new Error('Invalid number');
+      paste (type,info) {
+        info.roomInfo = []
+        info.roomInfo2 = []
+        this[`totalPrice`] = 0
+        this[`profit`] = null
+          // var count = 0;   //多次一举的脑瘫判断
+          // for (var i = 0; i < info.roomInfo.length; i++) {
+          //   if (info.roomInfo[i].includes("席位1总价值")) {
+          //     count++;
+          //   }
+          //   console.log('count>>>>', count);
+          // }
+          // var appearsMoreThanOnce = count > 1;
+          // if(appearsMoreThanOnce){
+          //   info.roomInfo = []
+          // }
 
-          const numStr = num.toString();
-          const split = numStr.split('.');
-          const integerPart = split[0];
-          const decimalPart = split[1] || '';
-          return {
-            integer: parseInt(integerPart + decimalPart, 10),
-            decimalPlaces: decimalPart.length
-          };
-        },
-        adjustNumbers (num1, num2) {
-          const parsed1 = this.parseNumber(num1);
-          const parsed2 = this.parseNumber(num2);
-
-          const maxDecimalPlaces = Math.max(parsed1.decimalPlaces, parsed2.decimalPlaces);
-          const factor = Math.pow(10, maxDecimalPlaces);
-
-          const integer1 = parsed1.integer * Math.pow(10, maxDecimalPlaces - parsed1.decimalPlaces);
-          const integer2 = parsed2.integer * Math.pow(10, maxDecimalPlaces - parsed2.decimalPlaces);
-
-          return { integer1, integer2, factor };
-        },
-        preciseAdd (num1, num2) {
-          const { integer1, integer2, factor } = this.adjustNumbers(num1, num2);
-          return (integer1 + integer2) / factor;
-        },
-        preciseSubtract (num1, num2) {
-          const { integer1, integer2, factor } = this.adjustNumbers(num1, num2);
-          return (integer1 - integer2) / factor;
-        },
-        preciseMultiply (num1, num2) {
-          const parsed1 = this.parseNumber(num1);
-          const parsed2 = this.parseNumber(num2);
-          const integerResult = parsed1.integer * parsed2.integer;
-          const decimalAdjustment = parsed1.decimalPlaces + parsed2.decimalPlaces;
-          return integerResult / Math.pow(10, decimalAdjustment);
-        },
-        preciseDivide (num1, num2) {
-          const { integer1, integer2 } = this.adjustNumbers(num1, num2);
-          if (integer2 === 0) throw new Error('Division by zero');
-          return integer1 / integer2;
-        },
-        // ----------------------------------------------------
-        clearAll(){
-          this[`json`] = null
-          this[`info`] = this.$options.data()[`info`];
-          this[`totalPrice`] = 0
-          this[`profit`] = null
-          console.clear()
-        },
-        paste(){
-          this.info.roomInfo = []
-          this[`totalPrice`] = 0
-          this[`profit`] = null
           // 执行粘贴操作
           navigator.clipboard.readText()
             .then(pastedText => {
-              this[`json`] = pastedText; // 将粘贴的内容赋值给文本框
+              // this.text = pastedText; // 将粘贴的内容赋值给文本框
+              this[`json${type}`] = pastedText; // 将粘贴的内容赋值给文本框
               // this[`info${type}`] = this.$options.data()[`info${type}`];
-              this.confirm()
+              this.oneClick(type, info)
             })
             .catch(error => {
               console.error('粘贴操作失败:', error);
             });
         },
-        confirm(){
-          if(!this.json) return
-          let obj = JSON.parse(this.json).data 
-          let total_seat  =obj.user_num //总席位
-          let now_seat = obj.game_arena_player.length
-          let total_price = 0
+        oneClear (type) {
+          this[`json${type}`] = null
+          // Object.assign(this.$data, this.$options.data())
+          this[`info${type}`] = this.$options.data()[`info${type}`];
+          this[`totalPrice`] = 0
+          this[`profit`] = null
+          console.clear()
+        },
+        oneClick (type, info) {
+          let list
+          if (type === 1 && this.json1) {
+            list = JSON.parse(this.json1).data.game_arena_player
+            list.sort((a, b) => a.seat - b.seat);
+          } else {
+            list = JSON.parse(this.json2)
+           let total_seat  = JSON.parse(this.json1).data.user_num//总席位 
+           let now_seat =   JSON.parse(this.json1).data.game_arena_player.length
+          }
+          if (!list) return
 
-          obj.game_arena_player.sort((a, b) => a.seat - b.seat);
-          obj.game_arena_player.forEach((e, i) => {
-            // 席位(用户)
-            let count = 0
-            e.game_award.forEach((e2, i2) => {
-              // 回合(箱子)
-              let findBoxObj = obj.game_arena_box.find(b => b.box_id == e2.box_id)
-              let findPrice = findBoxObj.box.contains.find(p => p.skin_id == e2.award_id)
-              if (findPrice) {
-                // count += Number(findPrice.skins.bean)//解决精度丢失
-                count = this.preciseAdd(count, Number(findPrice.skins.bean)).toFixed(2)
-                // console.log(`席位${e.seat + 1}>>回合${i2 + 1}>>价值:${findPrice.skins.bean}${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + count + '\n' : ''}`);
-                const infoItem = `<p>席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.box.bean) }】>>价值:<span class='keyNumber'>${findPrice.skins.bean}</span>  ${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span class=totalPriceColor>' + count + '</span>' + '\n<br/><br/>' : ''}</p>`
-           
-                // this.info.roomInfo.push(infoItem)
-                if (this.info.roomInfo.find(i => i.id == String(e2.id))) return;//如果找到 就是重复了
-                this.info.roomInfo.push({ label: infoItem, id: String(e2.id) })
-
-                if(i2 + 1 == e.game_award.length){ //计算总价值
-                   total_price = this.preciseAdd(total_price, count)//解决精度丢失
-                    if(total_seat== now_seat){ //判断席位满了才开始算
-                    this.totalPrice = total_price
-                    this.profit = this.preciseSubtract(total_price, obj.total_bean)
-                  }
-                }
+          let countList = []
+          list.forEach((e, i) => {
+            let conut = 0
+            e?.game_award.forEach((e2, i2) => {
+              conut += Number(e2.award_bean)
+              if (e2.award_bean, i2 + 1 == e.game_award.length) {
+                countList.push(conut);
               }
+             
+              let infoItem = `<p> 席位${e.seat + 1}>>回合${i2 + 1}>>【${e2.box.name}-${Number(e2.box.game_bean)||Number(e2.skins.bean) }】>>价值:<span class='keyNumber'>${e2.award_bean}</span> 
+                \xa0${i2 + 1 == e.game_award.length ? '\xa0\xa0>>>席位' + (e.seat + 1) + '总价值：' + '<span  class=totalPriceColor>' + conut + '</span>' +
+                '\n<br/><br/>' : ''}</p>`
+
+              if (info.roomInfo2.find(i => i.id == String(e2.id))) return;//如果找到 就是重复了
+              info.roomInfo.push(infoItem)
+              info.roomInfo2.push({ label: infoItem, id: String(e2.id) })
+              // console.log(`${e.type == 1 ? '房间原始席位' : '席位'}${e.seat + 1}`, `回合${i2 + 1}`, e2.award_bean, i2 + 1 == e.game_award.length ? `\xa0\xa0>>>席位${e.seat + 1}总价值${conut}\n` : '');
             })
           })
-          //  this.info.ticket.push(obj.total_bean)
-           this.info.ticket.push(this.info.ticket.length === 0 ? '' : ', ', obj.total_bean)
-        },
+          const totalPrice = countList.reduce((total, num) => total + num, 0)
+          const avg = totalPrice / countList.length;
+
+          if (type === 1) {
+            info.ticket.push(info.ticket.length===0?'':', ' ,JSON.parse(this.json1).data.total_bean)
+          }
+          info.totalPrice = totalPrice
+
+          if(i2 + 1 == e.game_award.length){ //计算总价值
+                total_price += count//解决精度丢失
+                if(total_seat== now_seat){ //判断席位满了才开始算
+                this.totalPrice += total_price
+                this.profit =  total_price-obj.total_bean
+              }
+          }
+
+
+
+          info.avg = avg
+        }
       }
     })
 
@@ -178,4 +214,8 @@
   p .ticketDom:last-child{
     color: blue;
   }
+
+  /* .el-textarea textarea{
+    background: #1e1d1d;  
+  } */
 </style>

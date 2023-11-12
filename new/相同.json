@@ -1,0 +1,831 @@
+{
+  "code": 200,
+  "message": "ok",
+  "data": {
+      "id": 2443257,
+      "create_user_id": 2282535,
+      "user_num": 4,
+      "box_num": 2,
+      "total_bean": "47.58",
+      "game_type": 1,
+      "status": 1,
+      "win_user_id": [
+          2246544,
+          2282535
+      ],
+      "draw_code": "202311071321334662",
+      "bot_id": 0,
+      "created_at": "2023-11-07 13:19:00",
+      "updated_at": "2023-11-07 13:21:40",
+      "play_type": 1,
+      "designated_bot_id": 0,
+      "is_anchor": 0,
+      "total_award_bean": "56.60",
+      "current_round": 2,
+      "box_id": 0,
+      "status_alias": "\u8fdb\u884c\u4e2d",
+      "game_arena_player": [
+          {
+              "id": 5825448,
+              "game_arena_id": 2443257,
+              "user_id": 2226172,
+              "seat": 2,
+              "game_award": [
+                  {
+                      "id": 16280235,
+                      "game_arena_id": 2443257,
+                      "user_id": 2226172,
+                      "box_id": 419,
+                      "award_id": 14827,
+                      "status": 1,
+                      "award_bean": "0.03",
+                      "level": 5,
+                      "box": {
+                          "id": 419,
+                          "type": 0,
+                          "name": "\u5be1\u4e0d\u654c\u4f17",
+                          "intact_cover": "",
+                          "bean": "13.80",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/2c87e435c02784c51f33b8cabefaa6e3.png"
+                      },
+                      "skins": {
+                          "id": 14827,
+                          "name": "\u5370\u82b1 | ESPADA | 2020 RMR",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4743d8279172f56a1b6f601e3095c5de.png",
+                          "dura": 0,
+                          "bean": "0.03",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 16280236,
+                      "game_arena_id": 2443257,
+                      "user_id": 2226172,
+                      "box_id": 420,
+                      "award_id": 18393,
+                      "status": 1,
+                      "award_bean": "4.61",
+                      "level": 4,
+                      "box": {
+                          "id": 420,
+                          "type": 0,
+                          "name": "\u62f3\u6253\u811a\u8e22",
+                          "intact_cover": "",
+                          "bean": "33.78",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/1794c3cd15a06307deb6cba030cb18dc.png"
+                      },
+                      "skins": {
+                          "id": 18393,
+                          "name": "MAG-7 | \u5317\u51a5\u6709\u9c7c",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/59b6af3e7f1e8e803ae55206a5f3d8d8.png",
+                          "dura": 2,
+                          "bean": "4.61",
+                          "dura_alias": "\u7565\u6709\u78e8\u635f"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 2226172,
+                  "name": "\u5927\u5b66\u751f\u6ca1\u94b1",
+                  "avatar": "https:\/\/api.fcsgo.com\/uploads\/default_avatar\/22.jpg"
+              }
+          },
+          {
+              "id": 5825435,
+              "game_arena_id": 2443257,
+              "user_id": 2246544,
+              "seat": 1,
+              "game_award": [
+                  {
+                      "id": 16280191,
+                      "game_arena_id": 2443257,
+                      "user_id": 2246544,
+                      "box_id": 419,
+                      "award_id": 14827,
+                      "status": 1,
+                      "award_bean": "0.03",
+                      "level": 5,
+                      "box": {
+                          "id": 419,
+                          "type": 0,
+                          "name": "\u5be1\u4e0d\u654c\u4f17",
+                          "intact_cover": "",
+                          "bean": "13.80",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/2c87e435c02784c51f33b8cabefaa6e3.png"
+                      },
+                      "skins": {
+                          "id": 14827,
+                          "name": "\u5370\u82b1 | ESPADA | 2020 RMR",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4743d8279172f56a1b6f601e3095c5de.png",
+                          "dura": 0,
+                          "bean": "0.03",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 16280192,
+                      "game_arena_id": 2443257,
+                      "user_id": 2246544,
+                      "box_id": 420,
+                      "award_id": 23108,
+                      "status": 1,
+                      "award_bean": "0.02",
+                      "level": 5,
+                      "box": {
+                          "id": 420,
+                          "type": 0,
+                          "name": "\u62f3\u6253\u811a\u8e22",
+                          "intact_cover": "",
+                          "bean": "33.78",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/1794c3cd15a06307deb6cba030cb18dc.png"
+                      },
+                      "skins": {
+                          "id": 23108,
+                          "name": "\u5370\u82b1 | Evil Geniuses | 2022\u5e74\u91cc\u7ea6\u70ed\u5185\u5362\u9526\u6807\u8d5b",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/022ed480d29eee80d1525b873ebea699.png",
+                          "dura": 0,
+                          "bean": "0.02",
+                          "dura_alias": "\u65e0"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 2246544,
+                  "name": "\u771f\u7684\u4e0d\u60f3\u5728\u975e\u914b\u4e86",
+                  "avatar": "https:\/\/api.fcsgo.com\/uploads\/default_avatar\/3.jpg"
+              }
+          },
+          {
+              "id": 5825438,
+              "game_arena_id": 2443257,
+              "user_id": 2280896,
+              "seat": 3,
+              "game_award": [
+                  {
+                      "id": 16280195,
+                      "game_arena_id": 2443257,
+                      "user_id": 2280896,
+                      "box_id": 419,
+                      "award_id": 22560,
+                      "status": 1,
+                      "award_bean": "51.85",
+                      "level": 1,
+                      "box": {
+                          "id": 419,
+                          "type": 0,
+                          "name": "\u5be1\u4e0d\u654c\u4f17",
+                          "intact_cover": "",
+                          "bean": "13.80",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/2c87e435c02784c51f33b8cabefaa6e3.png"
+                      },
+                      "skins": {
+                          "id": 22560,
+                          "name": "AWP | \u8ff7\u4eba\u773c",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/3a974b8088bf8fc30a9c68afccac0cd4.png",
+                          "dura": 3,
+                          "bean": "51.85",
+                          "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                      }
+                  },
+                  {
+                      "id": 16280196,
+                      "game_arena_id": 2443257,
+                      "user_id": 2280896,
+                      "box_id": 420,
+                      "award_id": 23108,
+                      "status": 1,
+                      "award_bean": "0.02",
+                      "level": 5,
+                      "box": {
+                          "id": 420,
+                          "type": 0,
+                          "name": "\u62f3\u6253\u811a\u8e22",
+                          "intact_cover": "",
+                          "bean": "33.78",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/1794c3cd15a06307deb6cba030cb18dc.png"
+                      },
+                      "skins": {
+                          "id": 23108,
+                          "name": "\u5370\u82b1 | Evil Geniuses | 2022\u5e74\u91cc\u7ea6\u70ed\u5185\u5362\u9526\u6807\u8d5b",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/022ed480d29eee80d1525b873ebea699.png",
+                          "dura": 0,
+                          "bean": "0.02",
+                          "dura_alias": "\u65e0"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 2280896,
+                  "name": "\u7528\u62376950",
+                  "avatar": "https:\/\/api.fcsgo.com\/uploads\/default_avatar\/75.jpg"
+              }
+          },
+          {
+              "id": 5825421,
+              "game_arena_id": 2443257,
+              "user_id": 2282535,
+              "seat": 0,
+              "game_award": [
+                  {
+                      "id": 16280144,
+                      "game_arena_id": 2443257,
+                      "user_id": 2282535,
+                      "box_id": 419,
+                      "award_id": 14827,
+                      "status": 1,
+                      "award_bean": "0.03",
+                      "level": 5,
+                      "box": {
+                          "id": 419,
+                          "type": 0,
+                          "name": "\u5be1\u4e0d\u654c\u4f17",
+                          "intact_cover": "",
+                          "bean": "13.80",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/2c87e435c02784c51f33b8cabefaa6e3.png"
+                      },
+                      "skins": {
+                          "id": 14827,
+                          "name": "\u5370\u82b1 | ESPADA | 2020 RMR",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4743d8279172f56a1b6f601e3095c5de.png",
+                          "dura": 0,
+                          "bean": "0.03",
+                          "dura_alias": "\u65e0"
+                      }
+                  },
+                  {
+                      "id": 16280145,
+                      "game_arena_id": 2443257,
+                      "user_id": 2282535,
+                      "box_id": 420,
+                      "award_id": 23108,
+                      "status": 1,
+                      "award_bean": "0.02",
+                      "level": 5,
+                      "box": {
+                          "id": 420,
+                          "type": 0,
+                          "name": "\u62f3\u6253\u811a\u8e22",
+                          "intact_cover": "",
+                          "bean": "33.78",
+                          "game_bean": "0.00",
+                          "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/1794c3cd15a06307deb6cba030cb18dc.png"
+                      },
+                      "skins": {
+                          "id": 23108,
+                          "name": "\u5370\u82b1 | Evil Geniuses | 2022\u5e74\u91cc\u7ea6\u70ed\u5185\u5362\u9526\u6807\u8d5b",
+                          "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/022ed480d29eee80d1525b873ebea699.png",
+                          "dura": 0,
+                          "bean": "0.02",
+                          "dura_alias": "\u65e0"
+                      }
+                  }
+              ],
+              "user": {
+                  "id": 2282535,
+                  "name": "\u561f\u561f\u554a",
+                  "avatar": "https:\/\/api.fcsgo.com\/uploads\/default_avatar\/11.jpg"
+              }
+          }
+      ],
+      "game_arena_box": [
+          {
+              "id": 6341338,
+              "game_arena_id": 2443257,
+              "box_id": 419,
+              "box": {
+                  "id": 419,
+                  "type": 0,
+                  "name": "\u5be1\u4e0d\u654c\u4f17",
+                  "bean": "13.80",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/220ed6d866d49d2d5063df42335b8f24.png",
+                  "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/2c87e435c02784c51f33b8cabefaa6e3.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 13524,
+                          "box_id": 419,
+                          "skin_id": 12117,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 12117,
+                              "name": "AWP | \u77f3\u58a8\u9ed1",
+                              "bean": "1083.64",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/32e01196a835128247e010c5f8f2dfba.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 13525,
+                          "box_id": 419,
+                          "skin_id": 12096,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 12096,
+                              "name": "AWP | \u91ce\u706b",
+                              "bean": "890.42",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/1a7156f683e08519e2f510a9e920b717.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 13527,
+                          "box_id": 419,
+                          "skin_id": 12191,
+                          "level": 1,
+                          "odds": 5,
+                          "odds_percent": "0.05%",
+                          "skins": {
+                              "id": 12191,
+                              "name": "AWP | \u4e8c\u897f\u83ab\u592b",
+                              "bean": "606.67",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/d1e4ad055dbec53afafd68473ddf9289.png",
+                              "dura": 4,
+                              "dura_alias": "\u7834\u635f\u4e0d\u582a"
+                          }
+                      },
+                      {
+                          "id": 13529,
+                          "box_id": 419,
+                          "skin_id": 12371,
+                          "level": 1,
+                          "odds": 10,
+                          "odds_percent": "0.10%",
+                          "skins": {
+                              "id": 12371,
+                              "name": "AWP | \u7535\u5b50\u8702\u5de2",
+                              "bean": "270.14",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/9d122708dbfe9ec62e35b39110346eb0.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 13530,
+                          "box_id": 419,
+                          "skin_id": 11994,
+                          "level": 1,
+                          "odds": 20,
+                          "odds_percent": "0.20%",
+                          "skins": {
+                              "id": 11994,
+                              "name": "AWP | \u7ea2\u7ebf",
+                              "bean": "230.66",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/1ca55dc471f319d539322d981d2b7037.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13537,
+                          "box_id": 419,
+                          "skin_id": 12123,
+                          "level": 1,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 12123,
+                              "name": "AWP | \u66b4\u6012\u91ce\u517d",
+                              "bean": "213.20",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/31ac6a05af14cc17d603615bbacf248a.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13531,
+                          "box_id": 419,
+                          "skin_id": 12065,
+                          "level": 1,
+                          "odds": 60,
+                          "odds_percent": "0.60%",
+                          "skins": {
+                              "id": 12065,
+                              "name": "AWP | \u9ed1\u8272\u9b45\u5f71",
+                              "bean": "134.65",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/f9e57926b157df21ac462f48bed88553.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13532,
+                          "box_id": 419,
+                          "skin_id": 14342,
+                          "level": 1,
+                          "odds": 240,
+                          "odds_percent": "2.40%",
+                          "skins": {
+                              "id": 14342,
+                              "name": "AWP | \u72ee\u5b50\u4e4b\u65e5",
+                              "bean": "122.05",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/390fb97c67a6c5311d5e3b7b4a58da15.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 13533,
+                          "box_id": 419,
+                          "skin_id": 22560,
+                          "level": 1,
+                          "odds": 330,
+                          "odds_percent": "3.30%",
+                          "skins": {
+                              "id": 22560,
+                              "name": "AWP | \u8ff7\u4eba\u773c",
+                              "bean": "51.85",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/3a974b8088bf8fc30a9c68afccac0cd4.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13534,
+                          "box_id": 419,
+                          "skin_id": 24407,
+                          "level": 1,
+                          "odds": 502,
+                          "odds_percent": "5.02%",
+                          "skins": {
+                              "id": 24407,
+                              "name": "AWP | \u91d1\u7c89\u8086\u86c7",
+                              "bean": "31.07",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/d24d2358a2b80bc30e7f42a65d4fa352.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 16560,
+                          "box_id": 419,
+                          "skin_id": 12177,
+                          "level": 5,
+                          "odds": 3000,
+                          "odds_percent": "30.00%",
+                          "skins": {
+                              "id": 12177,
+                              "name": "M4A4 | \u9541\u5143\u7d20",
+                              "bean": "3.12",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/80f02053782149c0f83f1c27ad44d255.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 13535,
+                          "box_id": 419,
+                          "skin_id": 14827,
+                          "level": 5,
+                          "odds": 5800,
+                          "odds_percent": "58.00%",
+                          "skins": {
+                              "id": 14827,
+                              "name": "\u5370\u82b1 | ESPADA | 2020 RMR",
+                              "bean": "0.03",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4743d8279172f56a1b6f601e3095c5de.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "id": 6341339,
+              "game_arena_id": 2443257,
+              "box_id": 420,
+              "box": {
+                  "id": 420,
+                  "type": 0,
+                  "name": "\u62f3\u6253\u811a\u8e22",
+                  "bean": "33.78",
+                  "game_bean": "0.00",
+                  "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/591a3e586ff8a8688f0fb1c839a99271.png",
+                  "weapon_cover": "https:\/\/api.fcsgo.com\/uploads\/images\/box\/1794c3cd15a06307deb6cba030cb18dc.png",
+                  "intact_cover": "",
+                  "contains": [
+                      {
+                          "id": 16600,
+                          "box_id": 420,
+                          "skin_id": 14554,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 14554,
+                              "name": "\u88f9\u624b\uff08\u2605\uff09 | \u5957\u5370",
+                              "bean": "2803.22",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4d2914d17c0c73ac5b2222e106deb361.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 14372,
+                          "box_id": 420,
+                          "skin_id": 14711,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 14711,
+                              "name": "\u4e13\u4e1a\u624b\u5957\uff08\u2605\uff09 | \u8001\u864e\u7cbe\u82f1",
+                              "bean": "2083.93",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/589852f9d1df028f179c39aac3435b7f.png",
+                              "dura": 4,
+                              "dura_alias": "\u7834\u635f\u4e0d\u582a"
+                          }
+                      },
+                      {
+                          "id": 14373,
+                          "box_id": 420,
+                          "skin_id": 14421,
+                          "level": 1,
+                          "odds": 1,
+                          "odds_percent": "0.01%",
+                          "skins": {
+                              "id": 14421,
+                              "name": "\u4e13\u4e1a\u624b\u5957\uff08\u2605\uff09 | \u6e10\u53d8\u5927\u7406\u77f3",
+                              "bean": "2045.79",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/f02ddee7d554273f90d728aa884cf4e5.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 14374,
+                          "box_id": 420,
+                          "skin_id": 14680,
+                          "level": 1,
+                          "odds": 2,
+                          "odds_percent": "0.02%",
+                          "skins": {
+                              "id": 14680,
+                              "name": "\u8fd0\u52a8\u624b\u5957\uff08\u2605\uff09 | \u5927\u578b\u730e\u7269",
+                              "bean": "963.67",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4c5e8e59d061f7e4d0e556d518e2e22f.png",
+                              "dura": 5,
+                              "dura_alias": "\u6218\u75d5\u7d2f\u7d2f"
+                          }
+                      },
+                      {
+                          "id": 14375,
+                          "box_id": 420,
+                          "skin_id": 14545,
+                          "level": 1,
+                          "odds": 3,
+                          "odds_percent": "0.03%",
+                          "skins": {
+                              "id": 14545,
+                              "name": "\u72c2\u7259\u624b\u5957\uff08\u2605\uff09 | \u7fe1\u7fe0",
+                              "bean": "706.52",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/17fe8a4bc69013ffe3af6212bfb03685.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 14376,
+                          "box_id": 420,
+                          "skin_id": 14713,
+                          "level": 1,
+                          "odds": 4,
+                          "odds_percent": "0.04%",
+                          "skins": {
+                              "id": 14713,
+                              "name": "\u88f9\u624b\uff08\u2605\uff09 | \u87d2\u86c7",
+                              "bean": "545.48",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/4a723abbb99f53eac6df13325c1f70c7.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 13547,
+                          "box_id": 420,
+                          "skin_id": 14457,
+                          "level": 1,
+                          "odds": 5,
+                          "odds_percent": "0.05%",
+                          "skins": {
+                              "id": 14457,
+                              "name": "\u88f9\u624b\uff08\u2605\uff09 | \u957f\u9888\u9e7f",
+                              "bean": "545.35",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/61653f16c980637857f1f86fd85e21eb.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13548,
+                          "box_id": 420,
+                          "skin_id": 14547,
+                          "level": 1,
+                          "odds": 10,
+                          "odds_percent": "0.10%",
+                          "skins": {
+                              "id": 14547,
+                              "name": "\u9a7e\u9a76\u624b\u5957\uff08\u2605\uff09 | \u7f8e\u6d32\u8c79\u5973\u738b",
+                              "bean": "473.06",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/95e56c75d1e35c040ea11c1521fc4a8d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13546,
+                          "box_id": 420,
+                          "skin_id": 14481,
+                          "level": 1,
+                          "odds": 20,
+                          "odds_percent": "0.20%",
+                          "skins": {
+                              "id": 14481,
+                              "name": "\u6469\u6258\u624b\u5957\uff08\u2605\uff09 | \u4ea4\u8fd0",
+                              "bean": "469.63",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/e6b67d3883db6562a2b51a011e8b2918.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13552,
+                          "box_id": 420,
+                          "skin_id": 14475,
+                          "level": 1,
+                          "odds": 30,
+                          "odds_percent": "0.30%",
+                          "skins": {
+                              "id": 14475,
+                              "name": "\u4e13\u4e1a\u624b\u5957\uff08\u2605\uff09 | \u72e9\u9e7f",
+                              "bean": "415.60",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/ef971f2fb7ac950eb07a7ff5d1c3803d.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 15186,
+                          "box_id": 420,
+                          "skin_id": 14430,
+                          "level": 1,
+                          "odds": 50,
+                          "odds_percent": "0.50%",
+                          "skins": {
+                              "id": 14430,
+                              "name": "\u88f9\u624b\uff08\u2605\uff09 | \u87d2\u86c7",
+                              "bean": "382.35",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/75aa93888970d95a9a267bc29b9ae014.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13551,
+                          "box_id": 420,
+                          "skin_id": 14443,
+                          "level": 1,
+                          "odds": 65,
+                          "odds_percent": "0.65%",
+                          "skins": {
+                              "id": 14443,
+                              "name": "\u4e5d\u5934\u86c7\u624b\u5957\uff08\u2605\uff09 | \u54cd\u5c3e\u86c7",
+                              "bean": "327.29",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/a08974155cf21c498f82c305bc54b13f.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 13550,
+                          "box_id": 420,
+                          "skin_id": 14449,
+                          "level": 1,
+                          "odds": 80,
+                          "odds_percent": "0.80%",
+                          "skins": {
+                              "id": 14449,
+                              "name": "\u4e5d\u5934\u86c7\u624b\u5957\uff08\u2605\uff09 | \u7ea2\u6811\u6797",
+                              "bean": "312.22",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/f3c0b5e03d06f5762a9013c38e6d3bc3.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 16596,
+                          "box_id": 420,
+                          "skin_id": 12046,
+                          "level": 1,
+                          "odds": 90,
+                          "odds_percent": "0.90%",
+                          "skins": {
+                              "id": 12046,
+                              "name": "AWP | \u9ed1\u8272\u9b45\u5f71",
+                              "bean": "206.73",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/16825dcdae3f0fc9708111e530bc6969.png",
+                              "dura": 1,
+                              "dura_alias": "\u5d2d\u65b0\u51fa\u5382"
+                          }
+                      },
+                      {
+                          "id": 16597,
+                          "box_id": 420,
+                          "skin_id": 20511,
+                          "level": 1,
+                          "odds": 100,
+                          "odds_percent": "1.00%",
+                          "skins": {
+                              "id": 20511,
+                              "name": "AK-47 | \u591c\u613f",
+                              "bean": "187.01",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/ca34694078a46033a78a495e87a91e79.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 16598,
+                          "box_id": 420,
+                          "skin_id": 12037,
+                          "level": 1,
+                          "odds": 200,
+                          "odds_percent": "2.00%",
+                          "skins": {
+                              "id": 12037,
+                              "name": "AK-47 | \u4e8c\u897f\u83ab\u592b",
+                              "bean": "170.71",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/0420bb6770d010a969bd3cee9bf73cd0.png",
+                              "dura": 3,
+                              "dura_alias": "\u4e45\u7ecf\u6c99\u573a"
+                          }
+                      },
+                      {
+                          "id": 16599,
+                          "box_id": 420,
+                          "skin_id": 12656,
+                          "level": 1,
+                          "odds": 400,
+                          "odds_percent": "4.00%",
+                          "skins": {
+                              "id": 12656,
+                              "name": "M4A1 \u6d88\u97f3\u578b | \u68a6\u9b47",
+                              "bean": "124.10",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/1918bf4235f89ef194e497f9bbfbc4bf.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 16601,
+                          "box_id": 420,
+                          "skin_id": 18393,
+                          "level": 4,
+                          "odds": 2438,
+                          "odds_percent": "24.38%",
+                          "skins": {
+                              "id": 18393,
+                              "name": "MAG-7 | \u5317\u51a5\u6709\u9c7c",
+                              "bean": "4.61",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/59b6af3e7f1e8e803ae55206a5f3d8d8.png",
+                              "dura": 2,
+                              "dura_alias": "\u7565\u6709\u78e8\u635f"
+                          }
+                      },
+                      {
+                          "id": 13559,
+                          "box_id": 420,
+                          "skin_id": 23108,
+                          "level": 5,
+                          "odds": 6500,
+                          "odds_percent": "65.00%",
+                          "skins": {
+                              "id": 23108,
+                              "name": "\u5370\u82b1 | Evil Geniuses | 2022\u5e74\u91cc\u7ea6\u70ed\u5185\u5362\u9526\u6807\u8d5b",
+                              "bean": "0.02",
+                              "cover": "https:\/\/api.fcsgo.com\/uploads\/images\/skins\/022ed480d29eee80d1525b873ebea699.png",
+                              "dura": 0,
+                              "dura_alias": "\u65e0"
+                          }
+                      }
+                  ]
+              }
+          }
+      ]
+  },
+  "timestamp": 1699334500
+}
